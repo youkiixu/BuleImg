@@ -1,0 +1,306 @@
+.main{
+    width: 97%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    box-shadow:inset -2px -2px 8px rgba(0,0,0,0.2);
+}
+.clearFloat:after{
+display: block;
+content:'';
+clear: both;
+height:0;
+}
+.main_header{
+    width: 100%;
+    height: 320px;
+}
+.main_header_cate{
+    margin: 0;
+    height: 180px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+.main_header_logo{
+    width: 305px;
+    height: 88px;
+    margin: 30px auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_header_logo img{
+    width: 100%;
+    height: 100%;
+}
+.main_header_catalog{
+    width: 845px;
+    height: 25px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: flex;
+}
+.main_catalog_item{
+    flex: 1;
+    border-left: 1px solid #6d6a6a;
+    font-size: 18px;
+    color: #4c4c4c;
+    line-height: 25px;
+    text-align: center;
+}
+.main_catalog_item:first-child{
+    border-left: none;
+}
+.main_header_search{
+    border: 1px solid transparent;
+    background: url(../i/main-head-bg.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.main_search{
+    width: 845px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    margin: 32px auto;   
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0px 0px 6px 3px #eeeeee;
+}
+.main_search_input{
+    width: 85%;
+    height: 100%;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 40px;
+    color: #4c4c4c;
+    outline-style: none;
+    border: 1px solid #e9e8e8;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #f6f6f6;
+}
+.main_search_btn{
+    width: 15%;
+    height: 100%;
+    border: none;
+    outline-style: none;
+    background: url(../i/search-icon.png) center center no-repeat;
+    background-size: 25% auto;
+    background-color: #9f8572;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.main_swiper{
+    width: 100%;
+    height: 515px;
+}
+.main_swiper .swiper-slide{
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    background-color: red;
+}
+.main_swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev{
+    width: 55px;
+    height: 75px;
+    left: 200px;
+    background: url(../i/swiper-prev.png) center center no-repeat;
+    background-size: 100% auto;
+}
+.swiper-button-next{
+    width: 55px;
+    height: 75px;
+    right: 200px;
+    background: url(../i/swiper-next.png) center center no-repeat;
+    background-size: 100% auto;
+}
+.main_content{
+    width: 1400px;
+    margin: 60px auto;
+}
+.main_content_inner{
+    width: 100%;
+    height: 100%;
+}
+.content_item{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.content_item_header{
+    width: 100%;
+    height: 60px;
+    line-height: 80px;
+    display: -webkit-box;
+    display: flex;
+    padding: 0 95px;
+    box-sizing: border-box;
+}
+.content_item_headerCate{
+    flex: 1;
+    font-size: 28px;
+    color: #4c4c4c;
+    line-height: 60px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: url(../i/choice-color.png) left center no-repeat;
+    background-size: 20% auto;
+}
+.content_item_headerSub{
+    flex: 6;
+    font-size: 14px;
+    color: #898787;
+}
+.content_item_headerSub ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.content_item_headerSub ul li{
+    width: 100px;
+    text-align: center;
+    float: left;
+}
+.content_item_headerMore{
+    flex: 0.3;
+    font-size: 14px;
+    color: #898787;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background: url(../i/more.png) 95% 70% no-repeat;
+    background-size: 20% auto;
+}
+.content_item_list{
+    width: 100%;
+    // height: 205px;
+    height: 385px;
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+.content_item_list .swiper-wrapper{
+    margin:0 95px 0 80px;  
+}
+.content_list_slide{
+    width: 290px;
+    height: 98%;
+    float: left;
+    overflow: hidden;
+    margin-left: 15px;   
+    box-shadow: 4px 4px 3px #888888;
+    transform: scale(1.01);
+    background-color: #fff;
+}
+.content_list_slide:hover .content_slide_inner{
+    top: 0;
+}
+.list_slide_img{
+    width: 265px;
+    height: 340px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    animation:top 5s ease-in-out;
+}
+.list_slide_img img{
+    width: 100%;
+    height: 100%;
+}
+.list_slide_title{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #898787;
+}
+.content_slide_inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 400px;
+    background-color: rgba(76, 76, 76, 0.8);
+}
+.slide_inner_collect{
+    width: 32px;
+    height: 32px;    
+    border-radius: 5px;
+    margin-left: 228px;
+    margin-top: 15px;
+    background: url(../i/collect.png) center center no-repeat;
+    background-size: 80% auto;
+    background-color: #fff;
+}
+.slide_inner_upload{
+    width: 165px;
+    height: 45px;   
+    margin: 220px auto;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    background: url(../i/download-white.png) 10% center no-repeat;
+    background-size: 20% auto;
+    background-color: #9f8572;
+    
+}
+.content_list-btnPrev{
+    width: 45px;
+    height: 70px;
+    left: 0px;
+}
+.content_list-btnNext{
+    width: 45px;
+    height: 70px;
+    right: 0px;
+}
+.content_chioce{
+
+}
+.chioce_list{
+    height: 205px;
+}
+.chioce_list .chioce_list_img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.chioce_list .chioce_list_collect{
+    margin-left: 240px;
+}
+.chioce_list .chioce_list_upload{
+    margin:80px auto;
+}
+.content_chioce .content_item_headerCate{  
+    background: url(../i/choice-color.png) left center no-repeat;
+}
+.content_newUpload .content_item_headerCate{  
+    background: url(../i/upload-color.png) left center no-repeat;
+}
+.content_poster .content_item_headerCate{  
+    background: url(../i/poster-color.png) left center no-repeat;
+}
+.content_taobao .content_item_headerCate{  
+    background: url(../i/taobao-color.png) left center no-repeat;
+}
+.content_element .content_item_headerCate{  
+    background: url(../i/element-color.png) left center no-repeat;
+}
+.content_work .content_item_headerCate{  
+    background: url(../i/work-color.png) left center no-repeat;
+}
+

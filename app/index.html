@@ -6,16 +6,17 @@
     <title>蓝图首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--框架必需start-->
-<link href="/libs/css/import_basic.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="libs/js/jquery.js"></script>
     <script type="text/javascript" src="libs/js/language/cn.js"></script>
     <script type="text/javascript" src="libs/js/framework.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" id="skin" prePath="" /> -->
+    <link href="/libs/css/import_basic.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="libs/skins/blue/style.css"> 
     <link rel="stylesheet" type="text/css" id="customSkin" />
     <!--框架必需end-->
-    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
     
 </head>
 <body>
@@ -80,15 +81,463 @@
 
         <div class="header_category">
                 <div class="header_category_item clear">
-                    <div class="category_item_inner">PPT模板</div>
-                    <div class="category_item_inner">PPT模板</div>
-                    <div class="category_item_inner">PPT模板</div>
+                    <div class="category_item_inner PPT">PPT模板</div>
+                    <div class="category_item_inner Excel">Excel模板</div>
+                    <div class="category_item_inner Word">Word模板</div>
                 </div>
         </div>    
 
     </div>
 
-    
+    <!-- 首页主体内容 -->
+    <div class="main">
+      <div class="main_header">
+        <div class="main_header_cate">
+          <div class="main_header_logo">
+            <img src="i/lantu-logo.png" />
+          </div>
+          <div class="main_header_catalog">
+            <div class="main_catalog_item">平面创意</div>
+            <div class="main_catalog_item">办公文档</div>
+            <div class="main_catalog_item">文件上传</div>
+            <div class="main_catalog_item">设计师进阶区</div>
+          </div>
+        </div>
+        <div class="main_header_search">
+          <div class="main_search">
+              <input type="text" class="main_search_input" placeholder="请输入关键字">
+              <button class="main_search_btn"></button> 
+          </div>
+        </div>
+      </div>
+      <div class="main_swiper swiper-container">          
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="i/swiper-img.jpg" />
+                  </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+              
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>                       
+      </div>
+
+      <div class="main_content">
+        <div class="main_content_inner">
+          <div class="content_item content_chioce">
+            <div class="content_item_header">
+              <div class="content_item_headerCate">精选推荐</div>
+              <div class="content_item_headerSub">
+                <ul class="clearFloat">
+                  <li>PPT精选</li>
+                  <li>万圣节</li>
+                  <li>淘宝轮播图</li>
+                  <li>优秀海报</li>
+                  <li>温馨图片</li>
+                </ul>
+              </div>
+              <div class="content_item_headerMore">更多</div>
+            </div>
+            <div class="content_item_list swiper-container chioce_list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide content_list_slide">
+                      <div class="list_slide_img chioce_list_img">
+                          <img src="i/all-img.png" />
+                          <div class="content_slide_inner">                          
+                              <div class="slide_inner_collect chioce_list_collect"></div>
+                              <div class="slide_inner_upload chioce_list_upload">立即下载</div>
+                            </div>
+                      </div>                                                             
+                    </div>     
+                    <div class="swiper-slide content_list_slide">
+                        <div class="list_slide_img chioce_list_img">
+                            <img src="i/all-img.png" />
+                            <div class="content_slide_inner">                          
+                                <div class="slide_inner_collect chioce_list_collect"></div>
+                                <div class="slide_inner_upload chioce_list_upload">立即下载</div>
+                              </div>
+                        </div>                                                             
+                      </div>      
+                      <div class="swiper-slide content_list_slide">
+                          <div class="list_slide_img chioce_list_img">
+                              <img src="i/all-img.png" />
+                              <div class="content_slide_inner">                          
+                                  <div class="slide_inner_collect chioce_list_collect"></div>
+                                  <div class="slide_inner_upload chioce_list_upload">立即下载</div>
+                                </div>
+                          </div>                                                             
+                        </div>      
+                        <div class="swiper-slide content_list_slide">
+                            <div class="list_slide_img chioce_list_img">
+                                <img src="i/all-img.png" />
+                                <div class="content_slide_inner">                          
+                                    <div class="slide_inner_collect chioce_list_collect"></div>
+                                    <div class="slide_inner_upload chioce_list_upload">立即下载</div>
+                                  </div>
+                            </div>                                                             
+                          </div>                                                                                
+                </div>            
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev content_list-btnPrev"></div>
+                <div class="swiper-button-next content_list-btnNext"></div>     
+            </div>
+          </div>
+
+          <div class="content_item content_newUpload">
+              <div class="content_item_header">
+                <div class="content_item_headerCate">最新上传</div>
+                <div class="content_item_headerSub">
+                  <ul class="clearFloat">
+                    <li>PPT精选</li>
+                    <li>万圣节</li>
+                    <li>淘宝轮播图</li>
+                    <li>优秀海报</li>
+                    <li>温馨图片</li>
+                  </ul>
+                </div>
+                <div class="content_item_headerMore">更多</div>
+              </div>
+              <div class="content_item_list swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide content_list_slide">
+                        <div class="list_slide_img">
+                            <img src="i/all-img.png" />
+                            <div class="content_slide_inner">                          
+                                <div class="slide_inner_collect"></div>
+                                <div class="slide_inner_upload">立即下载</div>
+                              </div>
+                        </div>
+                        <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                      </div>      
+                      <div class="swiper-slide content_list_slide">
+                          <div class="list_slide_img">
+                              <img src="i/all-img.png" />
+                              <div class="content_slide_inner">                          
+                                  <div class="slide_inner_collect"></div>
+                                  <div class="slide_inner_upload">立即下载</div>
+                                </div>
+                          </div>
+                          <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                        </div> 
+                        <div class="swiper-slide content_list_slide">
+                            <div class="list_slide_img">
+                                <img src="i/all-img.png" />
+                                <div class="content_slide_inner">                          
+                                    <div class="slide_inner_collect"></div>
+                                    <div class="slide_inner_upload">立即下载</div>
+                                  </div>
+                            </div>
+                            <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                          </div> 
+                          <div class="swiper-slide content_list_slide">
+                              <div class="list_slide_img">
+                                  <img src="i/all-img.png" />
+                                  <div class="content_slide_inner">                          
+                                      <div class="slide_inner_collect"></div>
+                                      <div class="slide_inner_upload">立即下载</div>
+                                    </div>
+                              </div>
+                              <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                            </div> 
+                                     
+                  </div>            
+                  <!-- 如果需要导航按钮 -->
+                  <div class="swiper-button-prev content_list-btnPrev"></div>
+                  <div class="swiper-button-next content_list-btnNext"></div>     
+              </div>
+          </div>
+
+          <div class="content_item content_poster">
+              <div class="content_item_header">
+                <div class="content_item_headerCate">海报设计</div>
+                <div class="content_item_headerSub">
+                  <ul class="clearFloat">
+                    <li>PPT精选</li>
+                    <li>万圣节</li>
+                    <li>淘宝轮播图</li>
+                    <li>优秀海报</li>
+                    <li>温馨图片</li>
+                  </ul>
+                </div>
+                <div class="content_item_headerMore">更多</div>
+              </div>
+              <div class="content_item_list swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide content_list_slide">
+                        <div class="list_slide_img">
+                            <img src="i/all-img.png" />
+                            <div class="content_slide_inner">                          
+                                <div class="slide_inner_collect"></div>
+                                <div class="slide_inner_upload">立即下载</div>
+                              </div>
+                        </div>
+                        <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                      </div>      
+                      <div class="swiper-slide content_list_slide">
+                          <div class="list_slide_img">
+                              <img src="i/all-img.png" />
+                              <div class="content_slide_inner">                          
+                                  <div class="slide_inner_collect"></div>
+                                  <div class="slide_inner_upload">立即下载</div>
+                                </div>
+                          </div>
+                          <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                        </div> 
+                        <div class="swiper-slide content_list_slide">
+                            <div class="list_slide_img">
+                                <img src="i/all-img.png" />
+                                <div class="content_slide_inner">                          
+                                    <div class="slide_inner_collect"></div>
+                                    <div class="slide_inner_upload">立即下载</div>
+                                  </div>
+                            </div>
+                            <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                          </div> 
+                          <div class="swiper-slide content_list_slide">
+                              <div class="list_slide_img">
+                                  <img src="i/all-img.png" />
+                                  <div class="content_slide_inner">                          
+                                      <div class="slide_inner_collect"></div>
+                                      <div class="slide_inner_upload">立即下载</div>
+                                    </div>
+                              </div>
+                              <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                            </div> 
+                                     
+                  </div>            
+                  <!-- 如果需要导航按钮 -->
+                  <div class="swiper-button-prev content_list-btnPrev"></div>
+                  <div class="swiper-button-next content_list-btnNext"></div>     
+              </div>
+          </div>
+
+          <div class="content_item content_taobao">
+              <div class="content_item_header">
+                <div class="content_item_headerCate">电商淘宝</div>
+                <div class="content_item_headerSub">
+                  <ul class="clearFloat">
+                    <li>PPT精选</li>
+                    <li>万圣节</li>
+                    <li>淘宝轮播图</li>
+                    <li>优秀海报</li>
+                    <li>温馨图片</li>
+                  </ul>
+                </div>
+                <div class="content_item_headerMore">更多</div>
+              </div>
+              <div class="content_item_list swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide content_list_slide">
+                        <div class="list_slide_img">
+                            <img src="i/all-img.png" />
+                            <div class="content_slide_inner">                          
+                                <div class="slide_inner_collect"></div>
+                                <div class="slide_inner_upload">立即下载</div>
+                              </div>
+                        </div>
+                        <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                      </div>      
+                      <div class="swiper-slide content_list_slide">
+                          <div class="list_slide_img">
+                              <img src="i/all-img.png" />
+                              <div class="content_slide_inner">                          
+                                  <div class="slide_inner_collect"></div>
+                                  <div class="slide_inner_upload">立即下载</div>
+                                </div>
+                          </div>
+                          <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                        </div> 
+                        <div class="swiper-slide content_list_slide">
+                            <div class="list_slide_img">
+                                <img src="i/all-img.png" />
+                                <div class="content_slide_inner">                          
+                                    <div class="slide_inner_collect"></div>
+                                    <div class="slide_inner_upload">立即下载</div>
+                                  </div>
+                            </div>
+                            <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                          </div> 
+                          <div class="swiper-slide content_list_slide">
+                              <div class="list_slide_img">
+                                  <img src="i/all-img.png" />
+                                  <div class="content_slide_inner">                          
+                                      <div class="slide_inner_collect"></div>
+                                      <div class="slide_inner_upload">立即下载</div>
+                                    </div>
+                              </div>
+                              <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                            </div> 
+                                     
+                  </div>            
+                  <!-- 如果需要导航按钮 -->
+                  <div class="swiper-button-prev content_list-btnPrev"></div>
+                  <div class="swiper-button-next content_list-btnNext"></div>     
+              </div>
+          </div>
+
+          <div class="content_item content_element">
+              <div class="content_item_header">
+                <div class="content_item_headerCate">设计元素</div>
+                <div class="content_item_headerSub">
+                  <ul class="clearFloat">
+                    <li>PPT精选</li>
+                    <li>万圣节</li>
+                    <li>淘宝轮播图</li>
+                    <li>优秀海报</li>
+                    <li>温馨图片</li>
+                  </ul>
+                </div>
+                <div class="content_item_headerMore">更多</div>
+              </div>
+              <div class="content_item_list swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide content_list_slide">
+                        <div class="list_slide_img">
+                            <img src="i/all-img.png" />
+                            <div class="content_slide_inner">                          
+                                <div class="slide_inner_collect"></div>
+                                <div class="slide_inner_upload">立即下载</div>
+                              </div>
+                        </div>
+                        <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                      </div>      
+                      <div class="swiper-slide content_list_slide">
+                          <div class="list_slide_img">
+                              <img src="i/all-img.png" />
+                              <div class="content_slide_inner">                          
+                                  <div class="slide_inner_collect"></div>
+                                  <div class="slide_inner_upload">立即下载</div>
+                                </div>
+                          </div>
+                          <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                        </div> 
+                        <div class="swiper-slide content_list_slide">
+                            <div class="list_slide_img">
+                                <img src="i/all-img.png" />
+                                <div class="content_slide_inner">                          
+                                    <div class="slide_inner_collect"></div>
+                                    <div class="slide_inner_upload">立即下载</div>
+                                  </div>
+                            </div>
+                            <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                          </div> 
+                          <div class="swiper-slide content_list_slide">
+                              <div class="list_slide_img">
+                                  <img src="i/all-img.png" />
+                                  <div class="content_slide_inner">                          
+                                      <div class="slide_inner_collect"></div>
+                                      <div class="slide_inner_upload">立即下载</div>
+                                    </div>
+                              </div>
+                              <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                            </div> 
+                                     
+                  </div>            
+                  <!-- 如果需要导航按钮 -->
+                  <div class="swiper-button-prev content_list-btnPrev"></div>
+                  <div class="swiper-button-next content_list-btnNext"></div>     
+              </div>
+          </div>
+
+          <div class="content_item content_work">
+              <div class="content_item_header">
+                <div class="content_item_headerCate">办公文档</div>
+                <div class="content_item_headerSub">
+                  <ul class="clearFloat">
+                    <li>PPT精选</li>
+                    <li>万圣节</li>
+                    <li>淘宝轮播图</li>
+                    <li>优秀海报</li>
+                    <li>温馨图片</li>
+                  </ul>
+                </div>
+                <div class="content_item_headerMore">更多</div>
+              </div>
+              <div class="content_item_list swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide content_list_slide">
+                        <div class="list_slide_img">
+                            <img src="i/all-img.png" />
+                            <div class="content_slide_inner">                          
+                                <div class="slide_inner_collect"></div>
+                                <div class="slide_inner_upload">立即下载</div>
+                              </div>
+                        </div>
+                        <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                      </div>      
+                      <div class="swiper-slide content_list_slide">
+                          <div class="list_slide_img">
+                              <img src="i/all-img.png" />
+                              <div class="content_slide_inner">                          
+                                  <div class="slide_inner_collect"></div>
+                                  <div class="slide_inner_upload">立即下载</div>
+                                </div>
+                          </div>
+                          <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                        </div> 
+                        <div class="swiper-slide content_list_slide">
+                            <div class="list_slide_img">
+                                <img src="i/all-img.png" />
+                                <div class="content_slide_inner">                          
+                                    <div class="slide_inner_collect"></div>
+                                    <div class="slide_inner_upload">立即下载</div>
+                                  </div>
+                            </div>
+                            <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                          </div> 
+                          <div class="swiper-slide content_list_slide">
+                              <div class="list_slide_img">
+                                  <img src="i/all-img.png" />
+                                  <div class="content_slide_inner">                          
+                                      <div class="slide_inner_collect"></div>
+                                      <div class="slide_inner_upload">立即下载</div>
+                                    </div>
+                              </div>
+                              <div class="list_slide_title">有趣做牛做马招聘设计师宣传单海报模版</div>                                         
+                            </div> 
+                                     
+                  </div>            
+                  <!-- 如果需要导航按钮 -->
+                  <div class="swiper-button-prev content_list-btnPrev"></div>
+                  <div class="swiper-button-next content_list-btnNext"></div>     
+              </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!--楼层导航栏 -->
+    <div class="floors_nav">
+      <div class="floors_nav_item floors_nav_choice">精选</div>
+      <div class="floors_nav_item floors_nav_new">最新</div>
+      <div class="floors_nav_item floors_nav_poster">海报</div>
+      <div class="floors_nav_item floors_nav_taobao">淘宝</div>
+      <div class="floors_nav_item floors_nav_element">元素</div>
+      <div class="floors_nav_item floors_nav_work">办公</div>
+    </div>
+
+
+    <!--侧栏 -->
+    <div class="Sidebar">
+      <div class="Sidebar_inner">
+        <div class="Sidebar_inner_item Sidebar_inner_signIn">签到</div>
+        <div class="Sidebar_inner_item Sidebar_inner_earnPoints">赚分</div>
+        <div class="Sidebar_inner_item Sidebar_inner_personal">个人</div>
+        <div class="Sidebar_inner_item Sidebar_inner_service">客服</div>
+        <div class="Sidebar_inner_item Sidebar_inner_opinion">意见</div>
+        <div class="Sidebar_inner_item Sidebar_inner_upload">上传</div>
+        <div class="Sidebar_inner_item Sidebar_inner_officialMicro">官微</div>
+        <div class="Sidebar_inner_item Sidebar_inner_Top">TOP</div>
+      </div>
+    </div>
 
     <!-- 底部 -->
     <div class="bottom">
@@ -147,20 +596,38 @@
                                         <li>电话：0757-82741635</li>
                                         <li>QQ:643761637</li>
                                         <li></li>
-                                        <li class="online">在线客服</li>
+                                        <li class="online"></li>
                                     </ul>
                                 </div>
                             </div>
         </div>
         <div class="copyRight">Copyright © 2018 兰图网  （www.lanimg.com）渝ICP备14001438号-1 站长统计</div>
     </div>
-
-
-
 </div>
-<script type="text/javascript" src="/libs/js/popup/dialog.js"></script>
 
+
+<script type="text/javascript" src="/libs/js/popup/dialog.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true, // 循环模式选项
+    autoplay: {
+      disableOnInteraction: false, //默认true 手动滑动之后不自动播放的问题
+      delay: 3000 //默认3000
+    },
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination'
+    },
+
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+</script>
 </body>
 </html>
