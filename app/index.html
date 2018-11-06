@@ -1,89 +1,150 @@
-<!doctype html>
-<html lang="">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description"
-        content="An Amaze UI template that helps you build fast, modern mobile web apps.">
-  <meta name="viewport"
-        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Web Starter Kit for Amaze UI</title>
-
-  <!-- Set render engine for 360 browser -->
-  <meta name="renderer" content="webkit">
-
-  <!-- No Baidu Siteapp-->
-  <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
-  <link rel="icon" type="image/png" href="i/favicon.png">
-
-  <!-- Add to homescreen -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- Fallback to homescreen for Chrome <39 on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Web Starter Kit">
-  <link rel="icon" sizes="192x192" href="i/touch/chrome-touch-icon-192x192.png">
-
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title"
-        content="Amaze UI Sfavicon.pngtarter Kit">
-  <link rel="apple-touch-icon" href="i/touch/apple-touch-icon.png">
-
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage"
-        content="i/touch/ms-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="#0e90d2">
-
-  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-  <!--
-  <link rel="canonical" href="http://www.example.com/">
-  -->
-  <link rel="stylesheet" href="css/amazeui.min.css"/>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>蓝图首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
+    
 </head>
 <body>
-<header class="am-topbar am-topbar-inverse ask-header">
-  <div class="am-container">
-    <h1 class="am-topbar-brand">
-      <a href="/" class="am-text-ir">Amaze UI</a>
-    </h1>
-    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header_inner clear">
+            <div class="header_notice">公告</div>
+            <div class="header_logo">
+                <img src="i/lantu-logo.png" />
+            </div>
+            <div class="header_search">
+                <input type="text" class="search_input" placeholder="请输入关键字">
+                <button class="btn_search"></button> 
+            </div>
+            <div class="header_catalog">
+                <div class="header_classifi">
+                        <div class="header_classifi_item">平面创意</div>
+                        <div class="header_classifi_item">办公文档</div>
+                        <div class="header_classifi_item">上传文件</div>
+                </div>                                            
+            </div>
+                       
+            <div class="register_login">
+                <!-- 未登录前 -->
+                <div class="login_none">
+                        <div class="login register_login_item">登录</div>
+                        <div class="register register_login_item">注册</div>
+                </div>
+                 <!-- 登录后 -->
+                <div class="login_success">
+                    <div class="login_success_outside">
+                            <a class="login_success_collect" href="#"></a>
+                            <div class="login_success_img">
+                              <img src="i/tou.png" />
+                            </div>
+                    </div>   
+                    <div class="order_info">
+                        <div class="order_info_top">
+                            <div class="info_top_item">
+                                <div class="top_item_img"></div>
+                                <div class="top_item_text">
+                                    <p class="name">Emily</p>
+                                    <p class="integral">积分：99</p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="order_info_bottom">
+                                <ul class="order_info_list">
+                                    <li class="info_list_personal">个人中心</li>
+                                    <li class="info_list_upload">我的上传</li>
+                                    <li class="info_list_download">我的下载</li>
+                                    <li class="info_list_collect">我的收藏</li>
+                                    <li class="info_list_loginOut">退出登录</li>                                  
+                                </ul>
+                            </div>
+                    </div>                
+                </div>               
+            </div>           
+        </div>
 
-    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-      <ul class="am-nav am-nav-pills am-topbar-nav">
-        <li class="am-active"><a href="#">关于我们</a></li>
-        <li><a href="http://amazeui.org" target="_blank">项目首页</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
-<section class="ask-banner">
-  <div class="am-container am-padding-vertical-lg">
-    <h1>世界，你好！</h1>
-    <p>欢迎使用 Amaze UI Stater Kit。</p>
-  </div>
-</section>
+        <div class="header_category">
+                <div class="header_category_item clear">
+                    <div class="category_item_inner">PPT模板</div>
+                    <div class="category_item_inner">PPT模板</div>
+                    <div class="category_item_inner">PPT模板</div>
+                </div>
+        </div>    
 
-<main>
-  <div class="am-container am-padding-vertical">
-    <p>
-      Amaze UI Stater Kit 是一个使用 Gulp、NPM 构建的工作流模板，在此模板上用户可以方便的使用 Amaze UI 开发网页应用。
-    </p>
-    <p><a href="https://github.com/amazeui/starter-kit" target="_blank" class="am-btn am-btn-success">查看详情</a></p>
-    <p>使用 highlight.js 高亮代码示例：</p>
-      <pre><code class="language-javascript">$(document).ready(function() {
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-  });
-});</code></pre>
     </div>
-</main>
+
+    
+
+    <!-- 底部 -->
+    <div class="bottom">
+        <div class="bottom_inner">
+            <div class="bottom_inner_item">
+                <div class="inner_item_title">关于我们</div>
+                <div class="inner_item_list">
+                    <ul>
+                        <li>关于兰图</li>
+                        <li>会员介绍</li>
+                        <li>设计师咨询</li>
+                        <li>联系客服</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_inner_item">
+                    <div class="inner_item_title">关于我们</div>
+                    <div class="inner_item_list">
+                        <ul>
+                            <li>帮助中心</li>
+                            <li>常见问题</li>
+                            <li>友情链接</li>
+                            <li>投诉举报</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom_inner_item">
+                        <div class="inner_item_title">服务条款</div>
+                        <div class="inner_item_list">
+                            <ul>
+                                <li>网站规则</li>
+                                <li>使用协议</li>
+                                <li>版权声明</li>
+                                <li>上传声明</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bottom_inner_item">
+                            <div class="inner_item_title">我要供图</div>
+                            <div class="inner_item_list">
+                                <ul>
+                                    <li>上传作品</li>
+                                    <li>上传记录</li>
+                                    <li>下载记录</li>
+                                    <li>收藏的图</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bottom_inner_item contact_us">
+                                <div class="inner_item_title">联系我们</div>
+                                <div class="inner_item_list">
+                                    <ul>
+                                        <li>电话：0757-82741635</li>
+                                        <li>QQ:643761637</li>
+                                        <li></li>
+                                        <li class="online">在线客服</li>
+                                    </ul>
+                                </div>
+                            </div>
+        </div>
+        <div class="copyRight">Copyright © 2018 兰图网  （www.lanimg.com）渝ICP备14001438号-1 站长统计</div>
+    </div>
+
+
 <script src="js/jquery.min.js"></script>
-<script src="js/amazeui.min.js"></script>
-<script src="js/main.js"></script>
-<!-- Built with love using Web Starter Kit -->
+<script src="js/common.js"></script>
 </body>
 </html>
