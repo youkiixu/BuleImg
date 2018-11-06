@@ -17,6 +17,13 @@ $(function(){
         $(".order_info").hide();  //显示
     });
 
-    
-
+    //楼层导航的显示隐藏
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 800) {
+        $('.floors_nav').fadeIn(800);
+        } else {
+        $('.floors_nav').fadeOut(800);
+        }
+        });
+   
 })
