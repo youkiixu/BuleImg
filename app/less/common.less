@@ -1,9 +1,11 @@
-@import "../../node_modules/amazeui/less/variables";
-@import "../../node_modules/amazeui/less/mixins";
 
-// highlight.js
-@import (inline) "../../node_modules/highlight.js/styles/github-gist.css";
-
+.clearfix{
+  overflow:hidden;
+  _zoom:1;
+}
+.l-verify-tip {
+  z-index: 919;
+}
 /*头部*/
 .header{
   height: 65px;
@@ -332,4 +334,82 @@ height:0;
   margin: 5px auto;
   font-size: 14px;
   color: #898787;
+}
+#login-content {
+  position: relative;
+  width: 520px;
+  height: 322px;
+  border-radius: 4px;
+  background: #fff;
+  .title {
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #4c4c4c;
+  }
+  .content {
+    text-align: center;
+    margin-top: 30px;
+    .content-table {
+      margin: 0 auto;
+    }
+    input {
+      width: 284px;
+      height: 38px;
+      border-color: #a8a7a7;
+      padding: 0 6px;
+    }
+    .password-cotnent {
+      position: relative;
+      margin: 12px auto 0;
+      width: 284px;
+      input {
+        padding-right: 100px;
+      }
+      .send-code {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: #9f8572;
+        background: #fff;
+        outline: none; 
+        border: 1px solid transparent;
+        margin: 0;
+        padding: 0;
+        cursor:pointer;
+      }
+      .send-code:hover {
+        color: #92684a;
+      }
+    }
+    .login-btn {
+      width: 284px;
+      height: 38px;
+      color: #fff;
+      line-height: 38px;
+      background: #9f8572;
+      outline: none; 
+      border: 1px solid transparent;
+      font-size: 16px;
+      font-weight: 700px;
+      border-radius: 4px;
+      margin: 10px auto 0;
+    }
+    .login-btn:hover {
+      background: #92684a;
+      cursor:pointer;
+    }
+  }
+  .login-content-bottom {
+    margin-top: 66px;
+    padding: 0 25px;
+    .social-btn , .register {
+      color: #9f8572;
+    }
+    .social-btn , .register:hover {
+      color: #92684a;
+      cursor:pointer;
+    }
+  }
 }

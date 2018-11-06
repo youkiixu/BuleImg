@@ -31,13 +31,14 @@ import browserify from 'browserify';
 import watchify from 'watchify';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
+import babel from 'gulp-babel';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 const AUTOPREFIXER_BROWSERS = [
-  'ie >= 10',
-  'ie_mob >= 10',
+  'ie >= 8',
+  'ie_mob >= 8',
   'ff >= 30',
   'chrome >= 34',
   'safari >= 7',
@@ -112,38 +113,24 @@ gulp.task('styles', () => {
     .pipe($.size({title: 'styles'}));
 });
 
-// 打包 Common JS 模块
-var bundleInit = () => {
-  var b = watchify(browserify({
-    entries: './app/js/main.js',
-    basedir: __dirname,
-    cache: {},
-    packageCache: {}
-  }));
 
-  b.transform('babelify', {presets: ['es2015']})
-    // 如果你想把 jQuery 打包进去，注销掉下面一行
-    .transform('browserify-shim', {global: true});
-
-  b.on('update', () => {
-    bundle(b);
-  }).on('log', $.util.log);
-
-  bundle(b);
-};
-
-var bundle = (b) => {
-  return b.bundle()
-    .on('error', $.util.log.bind($.util, 'Browserify Error'))
-    .pipe(source('main.js'))
-    .pipe(buffer())
+gulp.task('babel' , () => {
+  return gulp.src('app/js/*.js')
+    // .pipe($.plumber({
+    //   errorHandler: err => {
+    //     console.log(err);
+    //   }
+    // }))
+    .pipe($.plumber({}, true, function (err) {
+      console.log('ERROR!!!!');
+      console.log(err);
+    }))
+    .pipe(babel())
     .pipe(gulp.dest('dist/js'))
-    .pipe($.uglify())
-    .pipe($.rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/js'));
-};
-
-gulp.task('browserify', bundleInit);
+    .pipe($.size({
+      title: 'babel'
+    }));
+})
 
 // 压缩 HTML
 gulp.task('html', () => {
@@ -173,7 +160,7 @@ gulp.task('watch', () => {
   gulp.watch('app/less/**/*less', ['styles']);
   gulp.watch('app/i/**/*', ['images']);
   // 使用 watchify，不再需要使用 gulp 监视 JS 变化
-  // gulp.watch('app/js/**/*', ['browserify']);
+  gulp.watch('app/js/**/*', ['babel']);
 });
 
 // 启动预览服务，并监视 Dist 目录变化自动刷新浏览器
@@ -191,5 +178,5 @@ gulp.task('serve', ['default'], () => {
 // 默认任务
 gulp.task('default', (cb) => {
   runSequence('clean',
-    ['styles', 'html', 'images', 'copy', 'browserify'], 'watch', cb);
+    ['styles', 'html', 'images', 'copy', 'babel'], 'watch', cb);
 });
