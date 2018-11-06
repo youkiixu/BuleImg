@@ -75,18 +75,19 @@ gulp.task('clearCache', (done) => {
 gulp.task('copy', () => {
   return gulp.src([
       'app/*',
+      'app/**/**/*',
       '!app/*.html',
       '!app/js/*',
-      '!app/less',
-      'node_modules/amazeui/dist/**/*',
-      'node_modules/jquery/dist/jquery.min.js'
+      '!app/less'
+      // 'node_modules/amazeui/dist/**/*',
+      // 'node_modules/jquery/dist/jquery.min.js'
     ], {
       dot: true
     })
     .pipe(gulp.dest((file) => {
-      if (file.path.indexOf('jquery') > -1) {
-        return 'dist/js';
-      }
+      // if (file.path.indexOf('jquery') > -1) {
+      //   return 'dist/js';
+      // }
       return 'dist';
     }))
     .pipe($.size({title: 'copy'}));
