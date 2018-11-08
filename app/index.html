@@ -75,7 +75,7 @@
                  <!-- 登录后 -->
                 <div class="login_success">
                     <div class="login_success_outside">
-                            <a class="login_success_collect" href="#"></a>
+                            <a class="login_success_collect" href="ucenter.html"></a>
                             <div class="login_success_img">
                               <img src="i/tou.png" />
                             </div>
@@ -122,12 +122,106 @@
             <img src="i/lantu-logo.png" />
           </div>
           <div class="main_header_catalog">
-            <a class="main_catalog_item">平面创意</a>
-            <a class="main_catalog_item" href="work.html">办公文档</a>
-            <a class="main_catalog_item">文件上传</a>
-            <a class="main_catalog_item">设计师进阶区</a>
+            <div class="main_catalog_item"><a href="AdDesign.html">平面创意</a></div>
+            <div class="main_catalog_item"><a href="work.html">办公文档</a></div>
+            <div class="main_catalog_item"><a>文件上传</a></div>
+            <div class="main_catalog_item"><a>设计师进阶区</a></div>
           </div>
         </div>
+
+        <!-- 二级分类 -->
+        <div class="main_header_category" style="display:none;">
+            <div class="header_category_item main_category_item clearFloat" style="display:none;">
+                <div class="category_item_inner main_category_item_inner highimg">高清图库</div>
+                <div class="category_item_inner main_category_item_inner website">网页UI</div>
+                <div class="category_item_inner main_category_item_inner newUpload">最新上传</div>
+                <div class="category_item_inner main_category_item_inner taobao">电商淘宝</div>
+                <div class="category_item_inner main_category_item_inner adDesign">广告设计</div>
+                <div class="category_item_inner main_category_item_inner designElem">设计元素</div>
+                <div class="category_item_inner main_category_item_inner videoAE">视频AE</div>
+                <div class="category_item_inner main_category_item_inner interiorDesign">室内设计</div>
+            </div>
+
+            <!-- 三级分类 -->
+            <div class="category_inner_list" style="display:none;">
+                <div class="inner_list_baseWidth clearFloat">
+                    <div class="list_baseWidth_left">
+                        <div class="baseWidth_left_item">
+                            <div class="baseWidth_left_item_title">商业摄影图  <span>999,999</span></div>
+                            <div class="baseWidth_left_item_list">
+                                <ul class="clearFloat">
+                                    <li>人物</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="baseWidth_left_item">
+                            <div class="baseWidth_left_item_title">图片素材  <span>999,999</span></div>
+                            <div class="baseWidth_left_item_list">
+                                <ul class="clearFloat">
+                                    <li>人物</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                    <li>地点/地标</li>
+                                    <li>自然/风景</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="list_baseWidth_right">
+                        <div class="baseWidth_right_item_title">热门推荐</div>
+                        <div class="baseWidth_right_item_list">
+                            <ul class="clearFloat">
+                                <li><img src="i/hot.jpg" /></li>
+                                <li><img src="i/hot.jpg" /></li>
+                                <li><img src="i/hot.jpg" /></li>
+                                <li><img src="i/hot.jpg" /></li>
+                                <li><img src="i/hot.jpg" /></li>
+                                <li><img src="i/hot.jpg" /></li>
+                                <li><img src="i/hot.jpg" /></li>
+                                <li><img src="i/hot.jpg" /></li>                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>  
+               
+
+
+
+
+
+
         <div class="main_header_search">
           <div class="main_search">
               <input type="text" class="main_search_input" placeholder="请输入关键字">
@@ -539,14 +633,16 @@
     </div>
 
 
-    <!--楼层导航栏 -->
-    <div class="floors_nav">
-      <div class="floors_nav_item floors_nav_choice">精选</div>
-      <div class="floors_nav_item floors_nav_new">最新</div>
-      <div class="floors_nav_item floors_nav_poster">海报</div>
-      <div class="floors_nav_item floors_nav_taobao">淘宝</div>
-      <div class="floors_nav_item floors_nav_element">元素</div>
-      <div class="floors_nav_item floors_nav_work">办公</div>
+    <!--楼层导航栏 -->   
+    <div class="floors_nav" style="display: none;">
+        <ul>    
+                <li class="floors_nav_item floors_nav_choice">精选</li>
+                <li class="floors_nav_item floors_nav_new">最新</li>
+                <li class="floors_nav_item floors_nav_poster">海报</li>
+                <li class="floors_nav_item floors_nav_taobao">淘宝</li>
+                <li class="floors_nav_item floors_nav_element">元素</li>
+                <li class="floors_nav_item floors_nav_work">办公</li>
+        </ul>       
     </div>
 
 

@@ -63,7 +63,6 @@ height:0;
   height: 65px;
   float: left;
   margin-left:25px;
-  border-radius: 10px;
   display: flex;   
   justify-content: center;
   align-items: center; 
@@ -108,11 +107,12 @@ height:0;
 .header_classifi_item{
   flex: 1;
   width: 107px;
-  height: 65px;
-  line-height: 65px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   color: #4c4c4c;
   font-size: 18px;
+  margin-top: 15px;
 }
 .header_classifi_item:hover{
   color: #9f8572;
@@ -120,7 +120,7 @@ height:0;
 }   
 .header_category{
   height: 100px;
-  width: 97%;
+  width: 100%;
   position: absolute;
   background: #f6f6f6;
   z-index: 99;
@@ -130,6 +130,8 @@ height:0;
 }
 
 .header_category_item{
+  height: 100%;
+  width: 1200px;
   display: -webkit-box;
   display: flex;   
   justify-content: center;
@@ -137,9 +139,9 @@ height:0;
   margin: 0 auto;
 }
 .header_category_item .category_item_inner{
-  float: left;
+  flex: 1;
   width: 150px;
-  height: 100px;
+  height: 100%;
   line-height: 140px;
   font-size: 17px;
   color: #4c4c4c;
@@ -147,13 +149,13 @@ height:0;
   background-size: 25% auto;
 }
 .header_category_item .PPT{
-  background: url(../i/ppt-icon.png) center 30% no-repeat;
+  background: url(../i/ppt-icon.png) center 25% no-repeat;
 }
 .header_category_item .Excel{
-  background: url(../i/excel-icon.png) center 30% no-repeat;
+  background: url(../i/excel-icon.png) center 25% no-repeat;
 }
 .header_category_item .Word{
-  background: url(../i/word-icon.png) center 30% no-repeat;
+  background: url(../i/word-icon.png) center 25% no-repeat;
 }
 
 .register_login{
@@ -230,7 +232,7 @@ height:0;
   width: 257px;
   height: 390px;
   position: absolute;
-  z-index: 999;
+  z-index: 1000;
   right: -80px;
   box-shadow: 0px 0px 6px 3px #eeeeee;
   border-radius: 5px;
@@ -483,60 +485,51 @@ height:0;
 
 /*楼层导航栏*/
 .floors_nav{
-width: 45px;
-height: 528px;
-background-color: #fff;
-border-radius: 5px;
-position: fixed;
-top: 20%;
-left: 150px;
-z-index: 999;
-box-shadow: -2px -2px 8px rgba(0,0,0,0.2);
-display: -webkit-box;
-display: flex;
-flex-flow: column;
-text-align: center;
-color: #4c4c4c;
-font-size: 12px;
-padding: 15px 0;
-box-sizing: border-box;
-display: none;
+    position: fixed;
+    width: 45px;
+    background: #fff;
+    border-radius: 5px;
+    left: 50%;
+    top: 20%;
+    margin-left: -720px;
+    z-index: 999;
+    box-shadow: -2px -2px 8px rgba(0,0,0,0.2);   
 }
-.floors_nav_item{
-  flex: 1;
-  padding-top: 50px;
-  box-sizing: border-box;
+.floors_nav ul li{
+  list-style: none;
+  height: 90px;
+  line-height: 120px;
+  text-align: center;
+  color: #4c4c4c;
+  font-size: 12px;
   background-size: 10% auto;
-  cursor: pointer;
 }
 .floors_nav .floors_nav_choice{
-  background: url(../i/choice.png) center 40% no-repeat;
+  background: url(../i/choice.png) center 38% no-repeat;
 }
 .floors_nav .floors_nav_new{
-  background: url(../i/upload.png) center 40% no-repeat;
+  background: url(../i/upload.png) center 38% no-repeat;
 }
 .floors_nav .floors_nav_poster{
-  background: url(../i/poster.png) center 40% no-repeat;
+  background: url(../i/poster.png) center 38% no-repeat;
 }
 .floors_nav .floors_nav_taobao{
-  background: url(../i/taobao.png) center 40% no-repeat;
+  background: url(../i/taobao.png) center 38% no-repeat;
 }
 .floors_nav .floors_nav_element{
-  background: url(../i/element.png) center 40% no-repeat;
+  background: url(../i/element.png) center 38% no-repeat;
 }
 .floors_nav .floors_nav_work{
-  background: url(../i/work.png) center 40% no-repeat;
+  background: url(../i/work.png) center 38% no-repeat;
 }
 
 
 /*侧栏*/
 .Sidebar{
-  // width: 46px;
-  width: 3%;
+   width: 46px;
   height: 100%;
   right: 0;
-  bottom: 0;
-  top: 65px;
+  top: 0;
   position: fixed;
   z-index: 999;
   background: #fff;
@@ -648,6 +641,8 @@ display: none;
 .content_item_list{
   width: 100%;
   height: 385px;
+  padding: 10px 0;
+  box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 80px;
   position: relative;
@@ -658,8 +653,9 @@ display: none;
   float: left;
   overflow: hidden;
   margin-left: 20px;   
-  box-shadow: 2px 2px 2px #888888;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);;
   transform: scale(1.01);
+  border-radius: 7px;
   background-color: #fff;
 }
 .content_list_slide:first-child{
