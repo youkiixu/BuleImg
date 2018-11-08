@@ -94,7 +94,7 @@
 }
 .tip_toggle_content li .tip_news{
 	margin-top: 9px;
-	background: #2DA9FA url(popup/tip_news.png) no-repeat center center;
+	background: #9f8572 url(popup/tip_news.png) no-repeat center center;
 }
 .tip_toggle_content li .tip_num,
 .tip_toggle_content li .tip_txt{
@@ -166,7 +166,7 @@
 	display: none;
 }
 .tip_allcontent .all_title{
-	background: #2DA9FA;
+	background: #9f8572;
 	height: 54px;
 	box-sizing: border-box;
 }
