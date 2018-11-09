@@ -76,11 +76,11 @@ legend{
 	border-bottom: 1px solid #D8E3EF;
 }
 .themeColor{
-	color: #2DA9FA;
+	color: #9f8572;
 }
 .themeBgColor{
-	background-color: #2DA9FA!important;
-	border-color: #2DA9FA!important;
+	background-color: #9f8572!important;
+	border-color: #9f8572!important;
 }
 .contentMenu{
 	width: 100%;
@@ -103,7 +103,7 @@ legend{
 	border-left: 4px solid white;
 }
 .contentMenu .menu_win .menu_list.active{
-	border-left: 4px solid #2DA9FA;
+	border-left: 4px solid #9f8572;
 	background: #f1f6f9;
 }
 .contentMenu .menu_win .menu_list:hover{
@@ -343,8 +343,8 @@ legend{
 .dialog_main{
 	 box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
 	 border:0;
-	 *border: 1px solid #2DA9FA;
-	 border: 1px solid #2DA9FA\9;
+	 *border: 1px solid #9f8572;
+	 border: 1px solid #9f8572\9;
 	 border-radius: 10px;
 	 overflow: hidden;
 }
@@ -363,7 +363,7 @@ legend{
 .dialog_ct{
 	height:45px;
 	vertical-align:top;
-	background: #2DA9FA;
+	background: #9f8572;
 }
 .dialog_rt{
 	height:35px;
@@ -676,7 +676,7 @@ legend{
 	text-decoration:none;
 }
 .dialogTaskItemCurrent{
-	background: #2DA9FA;
+	background: #9f8572;
 }
 .dialogTaskItemIcon{
 	overflow:hidden;
@@ -771,7 +771,7 @@ legend{
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
 	margin-left: 500px;
 	margin-bottom: 10px;
-	border-left: 4px solid #2DA9FA;
+	border-left: 4px solid #9f8572;
 }
 
 .toast-item .title{
@@ -915,7 +915,7 @@ legend{
 	border-collapse: collapse;
 	width: 100%;
 	background-color: White;
-	border-top: 2px solid #2DA9FA;
+	border-top: 2px solid #9f8572;
 	
 }
 .formStyle{
@@ -944,7 +944,7 @@ legend{
 	font-weight: normal;
 	line-height: 45px;
 	background: #fafdff;
-	border-top: 2px solid #2DA9FA;
+	border-top: 2px solid #9f8572;
 }
 
 .th_m {
@@ -1009,7 +1009,7 @@ legend{
 	background-repeat: repeat-x;
 	font-weight: normal;
 	line-height: 32px;
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 }
 
 .tableStyle td {
@@ -1106,7 +1106,7 @@ tr.selected {
 .groupTitle span {
 	display: inline-block;
 	height: 98%;
-	border-bottom: 2px solid #2DA9FA;
+	border-bottom: 2px solid #9f8572;
 }
 
 
@@ -1147,7 +1147,7 @@ tr.selected {
 	line-height: 28px;
 	border-radius: 4px;
 	
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 	outline: none;
 	background: white;
 	box-sizing: border-box;
@@ -1221,7 +1221,7 @@ tr.selected {
 }
 
 .textarea_click {
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 	overflow: auto;
 	word-break: break-all;
 	word-wrap: break-word;
@@ -1263,8 +1263,8 @@ tr.selected {
 }
 .button:hover {	
 	background-color: white;
-	border-color: #2DA9FA;
-	color: #2DA9FA;
+	border-color: #9f8572;
+	color: #9f8572;
 }
 .button.default{
 	background-color: #F7F7F7;
@@ -1273,8 +1273,8 @@ tr.selected {
 }
 .button.default:hover{
 	background-color: white;
-	border-color: #2DA9FA;
-	color: #2DA9FA;
+	border-color: #9f8572;
+	color: #9f8572;
 }
 .button:disabled:hover{
 	background-color: #f7f7f7;
@@ -1296,7 +1296,7 @@ tr.selected {
 
 .button.primary{
 	border: 0;
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: #fff;
 }
 .button.primary:hover{
@@ -1305,11 +1305,11 @@ tr.selected {
 
 .button.plan{
 	background-color: transparent;/*空白*/
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 	color: #657180;
 }
 .button.plan:hover{
-	color: #2DA9FA;
+	color: #9f8572;
 	border-color: #55b9fb;
 	background-color: transparent;
 }
@@ -1386,7 +1386,7 @@ tr.selected {
 }
 .buttonGroup span.active{
 	background-color: #F7F7F7;
-	color: #2DA9FA;
+	color: #9f8572;
 	cursor: default;
 }
 
@@ -1402,11 +1402,11 @@ tr.selected {
 .toggleStyle1:hover{
 	background-image: url(form/gz2.png)!important;
 	color:#ffffff!important;
-	background-color:#2DA9FA!important; 
+	background-color:#9f8572!important; 
 }
 .toggleStyle1.toggle{
 	background-image: url(form/gz3.png);
-	color:#2DA9FA;
+	color:#9f8572;
 	background-color: #F7F7F7;
 	border-color: #F7F7F7;
 	border: 1px solid #d7dde4;
@@ -1414,7 +1414,7 @@ tr.selected {
 .toggleStyle1.toggle:hover{
 	background-image: url(form/gz4.png);
 	color:#ffffff;
-	background-color:#2DA9FA; 
+	background-color:#9f8572; 
 }
 .buttonswich {
 	width: 45px;
@@ -1488,10 +1488,10 @@ tr.selected {
 	/*box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);*/
 	line-height: 150%;
 	font-size: 12px;
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 }
 .cssVal{
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 }
 [type="radio"]:not(:checked)+ label:after,
 [type="radio"]:checked+ label:after {
@@ -1503,7 +1503,7 @@ tr.selected {
 	position: absolute;
 	top: 6px;
 	left: 6px;
-	background: #2DA9FA;
+	background: #9f8572;
 	transition: all .2s;
 	
 
@@ -1575,11 +1575,11 @@ tr.selected {
 	top: 0px;
 	width: 13px;
 	height: 13px;
-	background: #2DA9FA;
+	background: #9f8572;
 	border-radius: 1px;
 	/*box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);*/
 	line-height: 150%;
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 }
 
 [type="checkbox"]:not(:checked)+ label:after,
@@ -1660,7 +1660,7 @@ div.selectbox-wrapper ul li.selected {
 
 div.selectbox-wrapper ul li.current {
 	color: #ffffff;
-	background: #2DA9FA;
+	background: #9f8572;
 	/*鼠标移入项背景色*/
 	border: 0!important;
 }
@@ -1763,7 +1763,7 @@ div.selectbox-tree {
 }
 
 .selectbox-tree a:hover {
-	background-color: #2DA9FA!important;
+	background-color: #9f8572!important;
 	/*鼠标移入项背景色*/
 	color: white!important;
 	text-decoration: none!important;
@@ -1771,7 +1771,7 @@ div.selectbox-tree {
 }
 
 .multiSelectZtree li a:hover {
-	background-color: #2DA9FA!important;
+	background-color: #9f8572!important;
 	/*鼠标移入项背景色*/
 }
 
@@ -1926,7 +1926,7 @@ div.selectbox-tree {
 }
 
 .list_city .list_city_container a:hover {
-	background: none repeat scroll 0 0 #2DA9FA;
+	background: none repeat scroll 0 0 #9f8572;
 	text-decoration: none;
 	color: white;
 	transition: all .2s ease-in-out;
@@ -1940,7 +1940,7 @@ div.selectbox-tree {
 }
 
 .list_city .selected {
-	background: none repeat scroll 0 0 #2DA9FA;
+	background: none repeat scroll 0 0 #9f8572;
 	height: 32px;
 	color:#ffffff;
 }
@@ -1953,7 +1953,7 @@ div.selectbox-tree {
 }
 
 .list_city .page_break a {
-	color: #2DA9FA;
+	color: #9f8572;
 	margin: 0;
 	padding: 0 4px;
 	text-decoration: underline;
@@ -1972,8 +1972,8 @@ div.selectbox-tree {
 }
 
 .pop_city .pop_head {
-	background-color: #2DA9FA;
-	border-color: #2DA9FA;
+	background-color: #9f8572;
+	border-color: #9f8572;
 	border-style: solid;
 	border-width: 1px 1px 0;
 	height: 32px;
@@ -1999,7 +1999,7 @@ div.selectbox-tree {
 }
 
 .pop_city .list_label li a {
-	color: #2DA9FA;
+	color: #9f8572;
 	ursor: pointer;
 	text-decoration: none;
 	background: #fff;
@@ -2039,7 +2039,7 @@ div.selectbox-tree {
 }
 
 .pop_city .pop_city_container ul li a:hover {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: white;
 }
 /*自动提示框样式*/
@@ -2064,7 +2064,7 @@ div.selectbox-tree {
 	width: 30px;
 }
 .listerHover {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	/*鼠标移入颜色*/
 	cursor: default;
 	margin-left: 1px;
@@ -2162,14 +2162,14 @@ ul.lister {
 	min-width: auto;
 }
 .but_icon1{
-	background: #2DA9FA url(form/right1.png) no-repeat center center;
+	background: #9f8572 url(form/right1.png) no-repeat center center;
 }
 .but_icon1:hover{
 	background-color: #55b9fb!important;
 }
 .but_icon2{
 	margin-top: 10px;
-	background: #2DA9FA url(form/left1.png) no-repeat center center;
+	background: #9f8572 url(form/left1.png) no-repeat center center;
 }
 .but_icon2:hover{
 	background-color: #55b9fb!important;
@@ -2250,11 +2250,11 @@ input.stepper-active.stepper-down {
 	width: 32px;
 }
 .keypad-key-down{
-	background: #2DA9FA;
+	background: #9f8572;
 }
 .keypad-key-hover{
-	border: 1px solid #2DA9FA;
-	background: #2DA9FA;
+	border: 1px solid #9f8572;
+	background: #9f8572;
 	color: white;
 	transition: all .2s ease-in-out;
 }
@@ -2323,7 +2323,7 @@ input.stepper-active.stepper-down {
 
 .filter .current a {
 	padding-left: 4px!important;
-	border: solid 1px #2DA9FA!important;
+	border: solid 1px #9f8572!important;
 	background-image: url(form/filterClose.png);
 	background-repeat: no-repeat;
 	background-position: 95% 50%!important;
@@ -2339,7 +2339,7 @@ input.stepper-active.stepper-down {
 	padding-right: 8px!important;
 }
 .filter a:hover {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: #ffffff;
 	border-radius: 5px;
 }
@@ -2348,7 +2348,7 @@ input.stepper-active.stepper-down {
 	display: inline-block;
 	padding-left: 4px!important;
 	padding-right: 4px!important;
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: #ffffff;
 	border-radius: 5px;
 }
@@ -2430,7 +2430,7 @@ input.stepper-active.stepper-down {
 
 
 .conditionLinkContent li .current:hover {
-	color: #2DA9FA!important;
+	color: #9f8572!important;
 	cursor: auto!important;
 }
 
@@ -2449,13 +2449,13 @@ input.stepper-active.stepper-down {
 	padding: 0 10px;
 }
 .conditionLinkContent li .current {
-	color: #2DA9FA;
+	color: #9f8572;
 	cursor: auto!important;
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 	font-weight: 400;
 }
 .conditionLinkContent .item a:hover {
-	color: #2DA9FA;
+	color: #9f8572;
 	text-decoration: none;
 }
 
@@ -2482,7 +2482,7 @@ input.stepper-active.stepper-down {
 	overflow: hidden;
 	height: 20px;
 	line-height: 20px;
-	border: solid 1px #2DA9FA;
+	border: solid 1px #9f8572;
 	background-image: url(form/conditionLinkClose1.png);
 	background-repeat: no-repeat;
 	background-position: 98% 40%;
@@ -2490,15 +2490,15 @@ input.stepper-active.stepper-down {
 	white-space: nowrap;
 	padding: 0 16px 0 5px;
 	text-decoration: none;
-	border: 1px solid #2DA9FA;
-	color: #2DA9FA;
+	border: 1px solid #9f8572;
+	color: #9f8572;
 	border-radius: 0;
 }
 
 .conditionLink a:hover {
 	background-image: url(form/conditionLinkClose1.png);
 	text-decoration: none;
-	color: #2DA9FA;
+	color: #9f8572;
 }
 
 .conditionLink li {
@@ -2525,7 +2525,7 @@ input.stepper-active.stepper-down {
 .conditionNavTitle {
 	height: 38px;
 	/*background-image: url(form/conditonNavTitle.jpg);*/
-	background: #2DA9FA;
+	background: #9f8572;
 	background-repeat: repeat-x;
 	color: #ffffff;
 	text-align: center;
@@ -2544,7 +2544,7 @@ input.stepper-active.stepper-down {
 }
 
 .conditionNavContent .groupContent {
-	border: solid 1px #2DA9FA;
+	border: solid 1px #9f8572;
 	border-left: 0;
 	background-color: #ffffff;
 	z-index: 100;
@@ -2564,7 +2564,7 @@ input.stepper-active.stepper-down {
 }
 
 .conditionNavContent .current {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: #ffffff;
 	border-radius: 3px 3px 3px 3px;
 }
@@ -2581,7 +2581,7 @@ input.stepper-active.stepper-down {
 }
 
 .conditionNavContent .current2 {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: #ffffff;
 	border-radius: 3px 3px 3px 3px;
 }
@@ -2619,7 +2619,7 @@ input.stepper-active.stepper-down {
 }
 
 .conditionNavBox {
-	border: solid 1px #2DA9FA;
+	border: solid 1px #9f8572;
 	_overflow-x: hidden;
 	width: 100%;
 	border-radius: 5px 5px 0 0;
@@ -2722,7 +2722,7 @@ input.stepper-active.stepper-down {
 
 .conditionContent .item a:hover {
 	color: white;
-	background: #2DA9FA url(form/conditionCloseHover.png) no-repeat 95% 50%;
+	background: #9f8572 url(form/conditionCloseHover.png) no-repeat 95% 50%;
 }
 
 .conditionTop {
@@ -2847,7 +2847,7 @@ input.stepper-active.stepper-down {
 
 .stepFormTitle {
 	float: left;
-	color: #2DA9FA;
+	color: #9f8572;
 	padding: 0 20px 0 20px;
 }
 
@@ -2883,7 +2883,7 @@ input.stepper-active.stepper-down {
 	
 }
 .stepForm_nav li i.active{
-	background: #2DA9FA;
+	background: #9f8572;
 }
 .stepForm_nav li b{
 	display: block;
@@ -2996,7 +2996,7 @@ input.stepper-active.stepper-down {
 	border-bottom:none;
 	position: relative;
 	text-align: left;
-	border-top: 2px solid #2DA9FA;
+	border-top: 2px solid #9f8572;
 }
 
 .group_autowidth{
@@ -3035,7 +3035,7 @@ input.stepper-active.stepper-down {
 
 .l-panel-btn-over,
 .l-panel-btn-selected {
-	background: #2DA9FA;
+	background: #9f8572;
 	color: #ffffff;
 	border-radius: 3px 3px 3px 3px;
 }
@@ -3214,7 +3214,7 @@ input.stepper-active.stepper-down {
 
 .l-toolbar {
 	height: 30px;
-	border-bottom: 1px solid #2DA9FA;
+	border-bottom: 1px solid #9f8572;
 	padding-top: 10px;
 }
 
@@ -4085,13 +4085,13 @@ input.stepper-active.stepper-down {
     transition: color .2s linear,background-color .2s linear,border .2s linear;
 }
 .grid_opp_view{
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 }
 .grid_opp_view:hover{
 	background: #55b9fb;
 }
 .grid_opp_edit{
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 }
 .grid_opp_edit:hover{
 	background: #55b9fb;
@@ -4328,7 +4328,7 @@ input.stepper-active.stepper-down {
 	text-align: left!important;
 }
 .popupMenu_con span:hover{
-	background-color: #2DA9FA!important;
+	background-color: #9f8572!important;
 	color: #FFFFFF!important;
 	transition: all .2s ease-in-out;
 }
@@ -4356,7 +4356,7 @@ input.stepper-active.stepper-down {
 }
 
 .white_con a:hover {
-	background-color: #2DA9FA!important;
+	background-color: #9f8572!important;
 	/*菜单选项鼠标移入背景色*/
 	color: white!important;
 	text-decoration: none!important;
@@ -4389,7 +4389,7 @@ input.stepper-active.stepper-down {
 	text-decoration: none;
 	color: black;
 	filter: alpha(opacity=60);
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: white;
 }
 
@@ -4423,13 +4423,13 @@ input.stepper-active.stepper-down {
 	text-decoration: none;
 	color: black;
 	filter: alpha(opacity=60);
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: white;
 }
 
 .multi_con {
 	background: white;
-	*border: 1px solid #2DA9FA;
+	*border: 1px solid #9f8572;
 	padding: 10px;
 	width: 560px;
 	
@@ -4455,7 +4455,7 @@ input.stepper-active.stepper-down {
 	text-decoration: none;
 	/*color: black;*/
 	filter: alpha(opacity=60);
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: white;
 	border: solid 1px #80c0e7;
 	/*菜单项边框*/
@@ -4478,7 +4478,7 @@ input.stepper-active.stepper-down {
 }
 
 .multi_con .column h3 {
-	background: #2DA9FA;
+	background: #9f8572;
 	/*分组标题背景色*/
 	font-weight: bold;
 	font-size: 14px;
@@ -4593,8 +4593,8 @@ input.stepper-active.stepper-down {
 .basicTab_current_left {}
 
 .basicTab_current_center {
-	border-bottom: 2px solid #2DA9FA;
-	color: #2DA9FA;
+	border-bottom: 2px solid #9f8572;
+	color: #9f8572;
 }
 
 .basicTab_current_middle {}
@@ -4604,8 +4604,8 @@ input.stepper-active.stepper-down {
 .basicTab_current_right {}
 
 .basicTab_hover_center {
-	color: #2DA9FA;
-	border-bottom: 2px solid #2DA9FA;
+	color: #9f8572;
+	border-bottom: 2px solid #9f8572;
 }
 
 .basicTab_content {
@@ -4762,12 +4762,12 @@ input.stepper-active.stepper-down {
 
 .basicTabModern_current_center {
 	line-height: 35px;
-	color: #2DA9FA;
+	color: #9f8572;
 	height: 37px;
 	background: white;
 	border: 1px solid #d7dde4;
 	border-bottom: 0;
-	border-top: 2px solid #2DA9FA;
+	border-top: 2px solid #9f8572;
 }
 
 .basicTabModern_current_right {
@@ -4786,7 +4786,7 @@ input.stepper-active.stepper-down {
 
 .basicTabModern_top a:hover {
 	text-decoration: none;
-	color: #2DA9FA;
+	color: #9f8572;
 }
 
 .basicTabModern_content {
@@ -4877,7 +4877,7 @@ input.stepper-active.stepper-down {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background: #2DA9FA;
+	background: #9f8572;
 	top: 30%;
 	left: 0;
 }
@@ -4998,7 +4998,7 @@ input.stepper-active.stepper-down {
 
 .basicTabProcess_title {
 	float: left;
-	color: #2DA9FA;
+	color: #9f8572;
 	padding-top: 2px;
 	line-height: 30px;
 	background-color: #ffffff;
@@ -5088,7 +5088,7 @@ input.stepper-active.stepper-down {
 	background-image: url(basicTabProcess/icon_tab_item_current_hover.png);
 }
 .basicTabProcess_current_center span{
-	color: #2DA9FA;
+	color: #9f8572;
 }
 
 /*基本选项卡-样式3*/
@@ -5105,7 +5105,7 @@ input.stepper-active.stepper-down {
 .page_pcrcess .page_pcrcess_border{
 	width: 100%;
 	height: 2px;
-	background: #2DA9FA;
+	background: #9f8572;
 	position: absolute;
 	left: 0;
 	top: 30%;
@@ -5130,12 +5130,12 @@ input.stepper-active.stepper-down {
 	background-color: white;
 }
 .page_pcrcess li a:hover {
-	color: #2DA9FA;
+	color: #9f8572;
 	text-decoration: none;
 }
 
 .page_pcrcess .current {
-	color: #2DA9FA!important;
+	color: #9f8572!important;
 	background-image: url(nav/icon_page_process_item_current.png)!important;
 }
 
@@ -5177,7 +5177,7 @@ input.stepper-active.stepper-down {
 	/*background-image: url(dynamicTab/tab_current_left.jpg)!important;*/
 	background-position:0 0!important;
 	width:5px;
-	border-top: 2px solid #2DA9FA;
+	border-top: 2px solid #9f8572;
 	border-left:1px solid #eee;
 	background: #fff;
 }
@@ -5186,13 +5186,13 @@ input.stepper-active.stepper-down {
 	background-position:0 0!important;
 	color:#000000;
 	font-weight:bold;
-	border-top: 2px solid #2DA9FA;
+	border-top: 2px solid #9f8572;
 	background: #fff;
 }
 .benma_ui_tab .tab_item3_selected{
 	/*background-image: url(dynamicTab/tab_current_right.jpg)!important;*/
 	background-position:0 0!important;
-	border-top: 2px solid #2DA9FA;
+	border-top: 2px solid #9f8572;
 	border-right: 1px solid #eee;
 	background: #fff;
 }
@@ -5243,7 +5243,7 @@ input.stepper-active.stepper-down {
 	background-position:0 0!important;
 	width:5px;
 	background: #fff;
-	border-bottom: 2px solid #2DA9FA;
+	border-bottom: 2px solid #9f8572;
 	border-left: 1px solid #eee;
 }
 .benma_ui_tab .tab_item2_selected_bottom{
@@ -5252,14 +5252,14 @@ input.stepper-active.stepper-down {
 	color:#000000;
 	font-weight:bold;
 	background: #fff;
-	border-bottom: 2px solid #2DA9FA;
+	border-bottom: 2px solid #9f8572;
 	
 }
 .benma_ui_tab .tab_item3_selected_bottom{
 	/*background-image: url(dynamicTab/tab_current_right_bottom.jpg)!important;*/
 	background-position:0 0!important;
 	background: #fff;
-	border-bottom: 2px solid #2DA9FA;
+	border-bottom: 2px solid #9f8572;
 	border-right: 1px solid #eee;
 }
 .benma_ui_tab .tab_item1_mouseover_bottom{
@@ -5486,14 +5486,14 @@ input.stepper-active.stepper-down {
 }
 
 .accordition .titlebar:hover {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	border-top: 1px solid #3c95c8;
 	color: white;
 }
 
 .accordition .titlebar.selected {
-	background-color: #2DA9FA;
-	border-top: 1px solid #2DA9FA;
+	background-color: #9f8572;
+	border-top: 1px solid #9f8572;
 	color: white;
 }
 
@@ -5511,9 +5511,9 @@ input.stepper-active.stepper-down {
 }
 
 .navIcon_hover {
-	background-color: #2DA9FA!important;
+	background-color: #9f8572!important;
 	/*鼠标移入背景色*/
-	border: solid 1px #2DA9FA!important;
+	border: solid 1px #9f8572!important;
 	/*鼠标移入边框色*/
 	color: #ffffff;
 }
@@ -5571,14 +5571,14 @@ input.stepper-active.stepper-down {
 }
 
 .navIconSmall_hover {
-	background-color: #2DA9FA!important;
+	background-color: #9f8572!important;
 	/*鼠标移入背景色*/
 	color: #ffffff;
 	transition: all .2s ease-in-out;
 }
 
 .navIconSmall_current {
-	background-color: #2DA9FA!important;
+	background-color: #9f8572!important;
 	/*鼠标移入背景色*/
 	color: #ffffff;
 }
@@ -5613,7 +5613,7 @@ input.stepper-active.stepper-down {
 }
 
 .box_tool a:hover .navIconTool {
-	color: #2DA9FA;
+	color: #9f8572;
 	text-decoration: none;
 }
 
@@ -5704,7 +5704,7 @@ input.stepper-active.stepper-down {
 }
 
 .box_tool_min a:hover span {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	/*鼠标悬停背景色*/
 	color: #ffffff;
 	text-decoration: none!important;
@@ -5748,8 +5748,8 @@ input.stepper-active.stepper-down {
 
 .pageNumber a:hover {
 	text-decoration: none;
-	color: #2DA9FA;
-	border: 1px solid #2DA9FA;
+	color: #9f8572;
+	border: 1px solid #9f8572;
 	transition: all .2s ease-in-out;
 }
 
@@ -5763,11 +5763,11 @@ input.stepper-active.stepper-down {
 }
 
 .pageNumber .current {
-	background-color: #2DA9FA;
+	background-color: #9f8572;
 	color: white;
 	cursor: default;
-	border-bottom: 1px solid #2DA9FA;
-	border-top: 1px solid #2DA9FA;
+	border-bottom: 1px solid #9f8572;
+	border-top: 1px solid #9f8572;
 }
 
 
@@ -5809,7 +5809,7 @@ input.stepper-active.stepper-down {
 }
 
 .pageArrow .current {
-	color: #2DA9FA;
+	color: #9f8572;
 }
 
 .pageArrow_next {
@@ -5863,7 +5863,7 @@ input.stepper-active.stepper-down {
 	height: 40px;
 	border-left: solid 1px #E2E2E2;
 	border-right: solid 1px #E2E2E2;
-	border-bottom: solid 3px #2DA9FA;
+	border-bottom: solid 3px #9f8572;
 	background-image: url(nav/nav_h_bg.jpg);
 	background-repeat: repeat-x;
 	background-position: 0% 100%;
@@ -6355,7 +6355,7 @@ input.stepper-active.stepper-down {
 .error_404 h2{font-size:22px; padding-left:154px;}
 .error_404 p{padding-left:154px; line-height:35px;}
 .reindex{padding-left:154px;}
-.reindexBtn{width:115px; height:35px; font-size:14px;  color:#fff; background:#2DA9FA; display:block; line-height:35px; text-align:center;border-radius: 3px; behavior:url(js/pie.htc);margin-top:20px;}
+.reindexBtn{width:115px; height:35px; font-size:14px;  color:#fff; background:#9f8572; display:block; line-height:35px; text-align:center;border-radius: 3px; behavior:url(js/pie.htc);margin-top:20px;}
 .reindexBtn:hover{
 	color:#ffffff;
 }
@@ -6668,7 +6668,7 @@ input.stepper-active.stepper-down {
 }
 
 .img_list_win li:hover{
-	border: 1px solid #2DA9FA;
+	border: 1px solid #9f8572;
 }
 .img_list_win li p{
 	display: block;
@@ -6684,7 +6684,7 @@ input.stepper-active.stepper-down {
 }
 .img_list_win li .edit_delete span{
 	display: inline-block;
-	color: #2DA9FA;
+	color: #9f8572;
 	font-size: 14px;
 	cursor: pointer;
 }
@@ -6694,7 +6694,7 @@ input.stepper-active.stepper-down {
 .img_list_win li .edit_delete em{
 	display: inline-block;
 	font-size: 14px;
-	color: #2DA9FA;
+	color: #9f8572;
 	margin: 0 10px;
 }
 
