@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>消息中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--框架必需start-->
+
+    <script type="text/javascript" src="../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../libs/js/framework.js"></script>
+    <link href="../libs/css/import_basic.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../libs/skins/blue/style.css"> 
+    <link rel="stylesheet" type="text/css" id="customSkin" />
+    <!--框架必需end-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/messageCenter.css" />
+    
+</head>
+<body>
+<div class="page_content">
+
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header_inner clear">
+            <div class="header_notice">公告</div>
+            <div class="header_baseWidth">
+                <div class="header_logo">
+                    <img src="../i/lantu-logo.png" />
+                </div>
+                <div class="header_search">
+                    <input type="text" class="search_input" placeholder="请输入关键字">
+                    <button class="btn_search"></button> 
+                </div>
+                <div class="header_catalog">
+                    <div class="header_classifi">
+                            <div class="header_classifi_item">平面创意</div>
+                            <div class="header_classifi_item">办公文档</div>
+                            <div class="header_classifi_item">上传文件</div>
+                    </div>                                            
+                </div>
+            </div>
+           
+                       
+            <div class="register_login">
+                <!-- 未登录前 -->
+                <div class="login_none">
+                        <div class="login register_login_item">登录</div>
+                        <div class="register register_login_item">注册</div>
+                </div>
+                 <!-- 登录后 -->
+                <div class="login_success">
+                    <div class="login_success_outside">
+                            <a class="login_success_collect" href="#"></a>
+                            <div class="login_success_img">
+                              <img src="../i/tou.png" />
+                            </div>
+                    </div>   
+                    <div class="order_info">
+                        <div class="order_info_top">
+                            <div class="info_top_item">
+                                <div class="top_item_img"></div>
+                                <div class="top_item_text">
+                                    <p class="name">Emily</p>
+                                    <p class="integral">积分：99</p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="order_info_bottom">
+                                <ul class="order_info_list">
+                                    <li class="info_list_personal">个人中心</li>
+                                    <li class="info_list_upload">我的上传</li>
+                                    <li class="info_list_download">我的下载</li>
+                                    <li class="info_list_collect">我的收藏</li>
+                                    <li class="info_list_loginOut">退出登录</li>                                  
+                                </ul>
+                            </div>
+                    </div>                
+                </div>               
+            </div>           
+        </div>
+
+        <div class="header_category">
+                <div class="header_category_item clear">
+                    <div class="category_item_inner PPT">PPT模板</div>
+                    <div class="category_item_inner Excel">Excel模板</div>
+                    <div class="category_item_inner Word">Word模板</div>
+                </div>
+        </div>    
+
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="messageCenter">
+      <div class="messageCenter_container">
+          <div class="messageCenter_container_info">
+              <div class="container_info_title">
+                  <div class="info_title_logo clearFloat">
+                      <div class="title_logo_img"></div>
+                      <div class="title_logo_text">
+                          <p class="guan">兰图管家</p>
+                          <p class="about">关于兰图的一切小秘密</p>
+                      </div>
+                  </div>
+                  <div class="info_title_title">即日起创建多个收藏夹将扣除积分！不过。。。</div>
+                  <div class="info_title_date">2018/10/15  20:16</div>
+              </div>
+              <div class="container_info_content">
+                  <div class="info_content_detail">
+                        从现在起，你仍然可以享受每天免费创建1个收藏夹的功能福利，从当天创建第二个收藏夹开始，需要消耗少量
+                        积分。但你只需轻松完成搜索作品、查看作品详情页、收藏作品、下载作品等操作，即可获得充足积分（下文
+                        附有积分赚取简介）。你不仅可以使用这些积分创建足够的收藏夹，还可以利用积分进行抽奖、竞猜、积分商
+                        城购物等。玩的愉快！
+                  </div>
+                  <div class="info_content_img">
+                        <img src="../i/messageCenter-img.png" />
+                  </div>
+              </div>
+              <div class="container_info_share clearFloat">
+                  <div class="info_share_mess info_share_item">21</div>
+                  <div class="info_share_good info_share_item">21</div>
+                  <div class="info_share_share clearFloat">
+                      <div class="share_share_item info_share_qq"></div>
+                      <div class="share_share_item info_share_xin"></div>
+                      <div class="share_share_item info_share_wei"></div>
+                  </div>
+              </div>
+          </div>
+          <!-- 评论 -->
+          <div class="messageCenter_container_comment">
+              <div class="container_comment_write">
+                    <input type="text" class="comment_write_input" placeholder="说点什么...">
+                    <button style="font-size: 20px;" class="comment_write_btn">评论</button> 
+              </div>
+              <div class="container_comment_list">
+                  <div class="comment_list_total">兰图用户评论<span>(21)</span></div>
+                  <div class="comment_list_item">
+                      <div class="comment_list_itemInner">
+                          <div class="list_itemInner_top clearFloat">
+                              <div class="itemInner_top_headImg">
+                                    <img src="../i/messageCenter-user.png" />
+                              </div>
+                              <div class="itemInner_top_text">
+                                  <div class="itemInner_top_textName">张 三 <span>2018-10-16   10:39</span></div>
+                                  <div class="itemInner_top_textDetail">
+                                        这网站太棒了！！！！！
+                                  </div>
+                              </div>
+                              <div class="itemInner_top_good">21</div>
+                          </div>
+                          <div class="list_itemInner_reply">
+                              <div class="itemInner_reply_cate clearFloat">
+                                  <div class="reply_cate_total">21条回复</div>
+                                  <div class="reply_cate_more">收起</div>
+                                  <div class="reply_cate_replay">回复</div>
+                              </div>
+                              <div class="itemInner_reply_comment">
+                                <div class="reply_comment_list">
+                                    <div class="reply_comment_listItem clearFloat">
+                                        <div class="reply_comment_content clearFloat">
+                                                <div class="reply_comment_headImg">
+                                                        <img src="../i/messageCenter-user.png" />
+                                                  </div>
+                                                  <div class="reply_comment_text">
+                                                      <div class="reply_comment_textName">
+                                                          <span class="fir">张 三</span> 回复 <span class="secon">李 四</span> 
+                                                          <span class="time">2018-10-16   10:39</span>
+                                                    </div>
+                                                      <div class="reply_comment_textDetail">
+                                                            这网站太棒了！！！！！
+                                                      </div>
+                                                  </div>                     
+                                        </div>
+                                         <div class="reply_comment_hui">回复</div>              
+                                    </div>
+                                    <div class="reply_comment_listItem clearFloat">
+                                            <div class="reply_comment_content clearFloat">
+                                                    <div class="reply_comment_headImg">
+                                                            <img src="../i/messageCenter-user.png" />
+                                                      </div>
+                                                      <div class="reply_comment_text">
+                                                          <div class="reply_comment_textName">
+                                                              <span class="fir">张 三</span> 回复 <span class="secon">李 四</span> 
+                                                              <span class="time">2018-10-16   10:39</span>
+                                                        </div>
+                                                          <div class="reply_comment_textDetail">
+                                                                这网站太棒了！！！！！
+                                                          </div>
+                                                      </div>                     
+                                            </div>
+                                             <div class="reply_comment_hui">回复</div>              
+                                    </div>
+                                    <div class="reply_comment_more">还有49条评论，<a>查看更多</a></div>
+                                </div>
+
+                                <!-- 三角形 -->
+                                  <div class="triangle">
+                                        <div class="triangle_border_up">
+                                            <span></span>
+                                        </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="comment_list_itemInner">
+                            <div class="list_itemInner_top clearFloat">
+                                <div class="itemInner_top_headImg">
+                                      <img src="../i/messageCenter-user.png" />
+                                </div>
+                                <div class="itemInner_top_text">
+                                    <div class="itemInner_top_textName">张 三 <span>2018-10-16   10:39</span></div>
+                                    <div class="itemInner_top_textDetail">
+                                          这网站太棒了！！！！！
+                                    </div>
+                                </div>
+                                <div class="itemInner_top_good">21</div>
+                            </div>
+                            <div class="list_itemInner_reply">
+                                <div class="itemInner_reply_cate clearFloat">
+                                    <div class="reply_cate_total">21条回复</div>
+                                    <div class="reply_cate_more">收起</div>
+                                    <div class="reply_cate_replay">回复</div>
+                                </div>
+                                <div class="itemInner_reply_comment" style="display:none">
+                                  <div class="reply_comment_list">
+                                      <div class="reply_comment_listItem clearFloat">
+                                          <div class="reply_comment_content clearFloat">
+                                                  <div class="reply_comment_headImg">
+                                                          <img src="../i/messageCenter-user.png" />
+                                                    </div>
+                                                    <div class="reply_comment_text">
+                                                        <div class="reply_comment_textName">
+                                                            <span class="fir">张 三</span> 回复 <span class="secon">李 四</span> 
+                                                            <span class="time">2018-10-16   10:39</span>
+                                                      </div>
+                                                        <div class="reply_comment_textDetail">
+                                                              这网站太棒了！！！！！
+                                                        </div>
+                                                    </div>                     
+                                          </div>
+                                           <div class="reply_comment_hui">回复</div>              
+                                      </div>
+                                      <div class="reply_comment_listItem clearFloat">
+                                              <div class="reply_comment_content clearFloat">
+                                                      <div class="reply_comment_headImg">
+                                                              <img src="../i/messageCenter-user.png" />
+                                                        </div>
+                                                        <div class="reply_comment_text">
+                                                            <div class="reply_comment_textName">
+                                                                <span class="fir">张 三</span> 回复 <span class="secon">李 四</span> 
+                                                                <span class="time">2018-10-16   10:39</span>
+                                                          </div>
+                                                            <div class="reply_comment_textDetail">
+                                                                  这网站太棒了！！！！！
+                                                            </div>
+                                                        </div>                     
+                                              </div>
+                                               <div class="reply_comment_hui">回复</div>              
+                                      </div>
+                                      <div class="reply_comment_more">还有49条评论，<a>查看更多</a></div>
+                                  </div>
+  
+                                  <!-- 三角形 -->
+                                    <div class="triangle">
+                                          <div class="triangle_border_up">
+                                              <span></span>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="comment_list_itemInner">
+                            <div class="list_itemInner_top clearFloat">
+                                <div class="itemInner_top_headImg">
+                                      <img src="../i/messageCenter-user.png" />
+                                </div>
+                                <div class="itemInner_top_text">
+                                    <div class="itemInner_top_textName">张 三 <span>2018-10-16   10:39</span></div>
+                                    <div class="itemInner_top_textDetail">
+                                          这网站太棒了！！！！！
+                                    </div>
+                                </div>
+                                <div class="itemInner_top_good">21</div>
+                            </div>
+                            <div class="list_itemInner_reply">
+                                <div class="itemInner_reply_cate clearFloat">
+                                    <div class="reply_cate_total">21条回复</div>
+                                    <div class="reply_cate_more">收起</div>
+                                    <div class="reply_cate_replay">回复</div>
+                                </div>
+                                <div class="itemInner_reply_comment" style="display:none">
+                                  <div class="reply_comment_list">
+                                      <div class="reply_comment_listItem clearFloat">
+                                          <div class="reply_comment_content clearFloat">
+                                                  <div class="reply_comment_headImg">
+                                                          <img src="../i/messageCenter-user.png" />
+                                                    </div>
+                                                    <div class="reply_comment_text">
+                                                        <div class="reply_comment_textName">
+                                                            <span class="fir">张 三</span> 回复 <span class="secon">李 四</span> 
+                                                            <span class="time">2018-10-16   10:39</span>
+                                                      </div>
+                                                        <div class="reply_comment_textDetail">
+                                                              这网站太棒了！！！！！
+                                                        </div>
+                                                    </div>                     
+                                          </div>
+                                           <div class="reply_comment_hui">回复</div>              
+                                      </div>
+                                      <div class="reply_comment_listItem clearFloat">
+                                              <div class="reply_comment_content clearFloat">
+                                                      <div class="reply_comment_headImg">
+                                                              <img src="../i/messageCenter-user.png" />
+                                                        </div>
+                                                        <div class="reply_comment_text">
+                                                            <div class="reply_comment_textName">
+                                                                <span class="fir">张 三</span> 回复 <span class="secon">李 四</span> 
+                                                                <span class="time">2018-10-16   10:39</span>
+                                                          </div>
+                                                            <div class="reply_comment_textDetail">
+                                                                  这网站太棒了！！！！！
+                                                            </div>
+                                                        </div>                     
+                                              </div>
+                                               <div class="reply_comment_hui">回复</div>              
+                                      </div>
+                                      <div class="reply_comment_more">还有49条评论，<a>查看更多</a></div>
+                                  </div>
+  
+                                  <!-- 三角形 -->
+                                    <div class="triangle">
+                                          <div class="triangle_border_up">
+                                              <span></span>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+
+                  </div>
+                  <div class="more_comment">更多评论</div>
+              </div>
+          </div>
+          <!-- 猜你喜欢 -->
+          <div class="messageCenter_container_guessLike">
+              <div class="guessLike_hd">你可能喜欢</div>
+              <div class="guessLike_list clearFloat">
+                  <div class="guessLike_listItem">
+                      <div class="guessLike_listItem_img">
+                            <img src="../i/messageCenter-like.png" />
+                      </div>
+                      <div class="guessLike_listItem_title">国外出名logo大解析，成为你设计的灵感</div>
+                      <div class="guessLike_listItem_info clearFloat">
+                          <div class="listItem_infoHead">
+                                <img src="../i/messageCenter-user.png" />
+                          </div>
+                          <div class="listItem_infoName">张 三</div>
+                          <div class="listItem_infoTime">2018-10-16   10:39</div>
+                      </div>
+                  </div>
+                  <div class="guessLike_listItem">
+                        <div class="guessLike_listItem_img">
+                              <img src="../i/messageCenter-like.png" />
+                        </div>
+                        <div class="guessLike_listItem_title">国外出名logo大解析，成为你设计的灵感</div>
+                        <div class="guessLike_listItem_info clearFloat">
+                            <div class="listItem_infoHead">
+                                  <img src="../i/messageCenter-user.png" />
+                            </div>
+                            <div class="listItem_infoName">张 三</div>
+                            <div class="listItem_infoTime">2018-10-16   10:39</div>
+                        </div>
+                  </div>
+                  <div class="guessLike_listItem">
+                            <div class="guessLike_listItem_img">
+                                    <img src="../i/messageCenter-like.png" />
+                            </div>
+                            <div class="guessLike_listItem_title">国外出名logo大解析，成为你设计的灵感</div>
+                            <div class="guessLike_listItem_info clearFloat">
+                                <div class="listItem_infoHead">
+                                        <img src="../i/messageCenter-user.png" />
+                                </div>
+                                <div class="listItem_infoName">张 三</div>
+                                <div class="listItem_infoTime">2018-10-16   10:39</div>
+                            </div>
+                  </div>                   
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <!--侧栏 -->
+    <div class="Sidebar">
+      <div class="Sidebar_inner">
+        <div class="Sidebar_inner_item Sidebar_inner_signIn">签到</div>
+        <div class="Sidebar_inner_item Sidebar_inner_earnPoints">赚分</div>
+        <div class="Sidebar_inner_item Sidebar_inner_personal">个人</div>
+        <div class="Sidebar_inner_item Sidebar_inner_service">客服</div>
+        <div class="Sidebar_inner_item Sidebar_inner_opinion">意见</div>
+        <div class="Sidebar_inner_item Sidebar_inner_upload">上传</div>
+        <div class="Sidebar_inner_item Sidebar_inner_officialMicro">官微</div>
+        <div class="Sidebar_inner_item Sidebar_inner_Top" >TOP</div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="bottom">
+        <div class="bottom_inner">
+            <div class="bottom_inner_item">
+                <div class="inner_item_title">关于我们</div>
+                <div class="inner_item_list">
+                    <ul>
+                        <li>关于兰图</li>
+                        <li>会员介绍</li>
+                        <li>设计师咨询</li>
+                        <li>联系客服</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_inner_item">
+                    <div class="inner_item_title">关于我们</div>
+                    <div class="inner_item_list">
+                        <ul>
+                            <li>帮助中心</li>
+                            <li>常见问题</li>
+                            <li>友情链接</li>
+                            <li>投诉举报</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom_inner_item">
+                        <div class="inner_item_title">服务条款</div>
+                        <div class="inner_item_list">
+                            <ul>
+                                <li>网站规则</li>
+                                <li>使用协议</li>
+                                <li>版权声明</li>
+                                <li>上传声明</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bottom_inner_item">
+                            <div class="inner_item_title">我要供图</div>
+                            <div class="inner_item_list">
+                                <ul>
+                                    <li>上传作品</li>
+                                    <li>上传记录</li>
+                                    <li>下载记录</li>
+                                    <li>收藏的图</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bottom_inner_item contact_us">
+                                <div class="inner_item_title">联系我们</div>
+                                <div class="inner_item_list">
+                                    <ul>
+                                        <li>电话：0757-82741635</li>
+                                        <li>QQ:643761637</li>
+                                        <li></li>
+                                        <li class="online"></li>
+                                    </ul>
+                                </div>
+                            </div>
+        </div>
+        <div class="copyRight">Copyright © 2018 兰图网  （www.lanimg.com）渝ICP备14001438号-1 站长统计</div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../libs/js/popup/dialog.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

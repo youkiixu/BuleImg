@@ -616,7 +616,7 @@ height:0;
 .content_item_list{
   width: 100%;
   height: 385px;
-  padding: 10px 0;
+  // padding: 10px 0;
   box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 80px;
@@ -624,11 +624,11 @@ height:0;
 }
 .content_list_slide{
   width: 285px;
-  height: 98%;
+  height: 385px;
   float: left;
   overflow: hidden;
-  margin-left: 20px;   
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);;
+  margin-left: 15px;   
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
   transform: scale(1.01);
   border-radius: 7px;
   background-color: #fff;
@@ -644,9 +644,6 @@ height:0;
   height: 340px;
   margin: 0 auto;
   margin-top: 10px;
-  display: flex;   
-  justify-content: center;
-  align-items: center; 
   position: relative;
   animation:top 5s ease-in-out;
 }
@@ -724,4 +721,79 @@ height:0;
 }
 .chioce_list .chioce_list_upload{
   margin:80px auto;
+}
+
+/*相同模块产品*/
+.common_content{
+  width: 1200px;
+  height: 100%;
+  padding-bottom: 5px;
+}
+.common_content_item{
+width: 285px;
+height: 385px;
+position: relative;
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+transform: scale(1.01);
+border-radius: 7px;
+background-color: #fff;
+border: 1px solid transparent;
+float: left;
+margin-left: 13px;
+margin-top: 20px;
+}
+.common_content_item:nth-child(4n+1){
+  margin-left: 0;
+}
+.common_content_itemImg{
+  width: 265px;
+  height: 340px;   
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+  -webkit-animation: top 5s ease-in-out;
+  animation: top 5s ease-in-out;
+  overflow: hidden;
+}
+.common_content_item:hover .common_content_inner {
+  top: 0;
+}
+.common_content_inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 400px;
+  background-color: rgba(76, 76, 76, 0.8);
+}
+.content_inner_collect {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  margin-left: 228px;
+  margin-top: 15px;
+  background: url(../i/collect.png) center center no-repeat;
+  background-size: 80% auto;
+  background-color: #fff;
+}
+.content_inner_upload {
+  width: 165px;
+  height: 45px;
+  margin: 220px auto;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background: url(../i/download-white.png) 10% center no-repeat;
+  background-size: 20% auto;
+  background-color: #9f8572;
+}
+.content_item_title{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #898787;
 }

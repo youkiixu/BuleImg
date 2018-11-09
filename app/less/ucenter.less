@@ -129,14 +129,6 @@ height:0;
     color: white;
 }
 
-// .ucenter_info_inner{
-//     width: 100%;
-//     height: 100%;
-//     position: relative;
-//     border: 1px solid red;
-//     background: red;
-// }
-
 .ucenter_container{
     width: 100%;
     height: 100%;
@@ -199,9 +191,42 @@ height:0;
     background: url(../i/upload-color.png) 15% center no-repeat;
     background-color: #f6f6f6;
 }
+.ucenter_catelog_inner ul .li_collect:hover{
+    background: url(../i/upload-color.png) 15% center no-repeat;
+    background-color: #f6f6f6;
+}
+.ucenter_catelog_inner ul .li_foot:hover{
+    background: url(../i/upload-color.png) 15% center no-repeat;
+    background-color: #f6f6f6;
+}
+.ucenter_catelog_inner ul .li_message:hover{
+    background: url(../i/upload-color.png) 15% center no-repeat;
+    background-color: #f6f6f6;
+}
 .ucenter_catelog_inner ul li:hover{
     background-color: #f6f6f6;
 }
+.ucenter_container_inner{
+    width: 100%;
+    height: 100%;  
+    // position: relative;  
+}
+.container_inner_item{
+    width: 100%;
+    height: 100%;
+    // position: absolute;
+}
+// .ucenter_container_inner .container_inner_upload{
+//     z-index: 10;
+// }
+// .ucenter_container_inner .container_inner_download{
+//     z-index: 9;
+// }
+
+
+
+
+
 .ucenter_catelog_list{
     width: 100%;
     height: 65px;
@@ -212,8 +237,27 @@ height:0;
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    padding-top: 35px;
+    padding: 35px 20px 0 20px;
     box-sizing: border-box;
+}
+.catelog_listUl{
+    float: left;
+}
+.catelog_listBtn{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #9f8572;
+    color: #9f8572;
+    border-radius: 5px;
+    margin-top: -15px;
+}
+.catelog_listBtn:hover{
+    background-color: #9f8572;
+    color: #fff;
 }
 .ucenter_catelog_listInner ul li{
     list-style: none;
@@ -236,6 +280,148 @@ height:0;
     border-radius: 5px;
     font-weight: bold;
 }
-.ucenter_main_content{
+.container_inner_upload .ucenter_main_content{
     margin-top: 0;
+    padding-top: 10px;
+    
+}
+/*上传中心*/
+.upload_item_list{
+    width: 100%;
+    height: 110px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.upload_item_listImg{
+    width: 130px;
+    height: 90px;
+    float: left;
+    border: 1px solid #c0c0c0;
+    overflow: hidden;
+}
+.upload_item_listImg img{
+    width: 100%;
+    height: 100%;
+}
+.upload_item_listInfo{
+    width: auto;
+    height: 90px;
+    float: left;
+    margin-left: 10px;
+}
+.listInfo_title{
+    font-size: 16px;
+    color: #4c4c4c;
+}
+.listInfo_size{
+    font-size: 14px;
+    color: #898989;
+    margin-top: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.listInfo_date{
+    font-size: 14px;
+    color: #898989;
+    height: 20px;
+    line-height: 20px;
+}
+.upload_item_listDelete{
+    width: 40px;
+    height: 25px;
+    float: right;
+    line-height: 25px;
+    text-align: center;
+    color: #ff0000;
+    font-size: 16px;
+}
+/*消息中心*/
+.message_listUl ul li{  
+    color: #4c4c4c;
+    font-size: 16px;
+}
+.message_listUl ul li:hover{
+    background-color: transparent;
+    color: #4c4c4c;
+}
+.message_listUl ul li span{
+    color: #ff0000;
+    font-size: 16px;
+}
+.message_listBtn{
+    color: #4c4c4c;
+    border: none;
+    font-size: 16px;
+}
+.container_inner_message .main_content{
+    margin-top: 0;
+    padding-top: 0;
+}
+.message_item_list{
+    display: block;
+    height: 70px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:2px 2px 6px 2px rgba(0,0,0,0.2);
+    padding: 10px 15px 10px 30px;
+    box-sizing: border-box;
+}
+.message_item_listInfo{
+    width: 1100px;
+    height: 50px;
+    float: left;
+}
+.message_item_listDelete{
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-top: 12px;
+    background: url(../i/delete.png) center center no-repeat;
+    background-size: 85% auto;
+}
+.message_listInfo_notice{
+    height: 30px;
+    line-height: 30px;
+    color: #4c4c4c;
+    font-size: 17px;
+}
+.listInfo_notice_circle{
+    color: #ff0000;
+    font-size: 50px;
+    width: 20px;
+    height: 30px;
+    line-height: 25px;
+    float: left;
+}
+.listInfo_notice_text{
+    height: 30px;
+    float: left;
+}
+.listInfo_notice_text .notice_notice{
+    font-weight: bold;
+}
+.listInfo_notice_text .notice_title{
+    color: #ff0000;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.listInfo_notice_text .notice_date{
+    color: #898989;
+    font-size: 14px;
+    margin-left: 45px;
+}
+.message_listInfo_desc{
+    font-size: 14px;
+    color: #898989;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.message_item_list:hover{
+    background-color: #f6f6f6;
 }
