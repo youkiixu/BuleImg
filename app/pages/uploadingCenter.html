@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>下载素材</title>
+    <title>上传中心</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--框架必需start-->
 
@@ -16,7 +16,7 @@
     <!--框架必需end-->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/common.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/downloadMaterial.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/uploadingCenter.css" />
     
 </head>
 <body>
@@ -93,32 +93,15 @@
     </div>
 
     <!-- 主体内容 -->
-    <div class="downloadMaterial">
-      <div class="downloadMaterial_container">
-          <div class="downloadMaterial_containerInner clearFloat">
-              <div class="downloadMaterial_left">
-                <img src="../i/preview-img.png" />
-              </div>
-              <div class="downloadMaterial_right">
-                  <div class="downloadMaterial_rightTitle">书法山水创意海报</div>
-                  <div class="downloadMaterial_rightFormat clearFloat">
-                        <div class="rightFormat_img">
-                                <img src="../i/preview-ps.png" />
-                        </div>
-                        <div class="rightFormat_txt">
-                            <div class="txt_file">文件格式：PSD</div>
-                            <div class="txt_edition">版本：Adobe Photoshop  CS4</div>
-                        </div>
-                  </div>                            
-                <div class="rightFormat_detail clearFloat">
-                        <div class="rightFormat_detailItem">编 号：1482067</div>
-                        <div class="rightFormat_detailItem">尺 寸：400x300 mm</div>
-                        <div class="rightFormat_detailItem">分辨率：300 dpi</div>
-                        <div class="rightFormat_detailItem">大 小：20MB</div>
-                        <div class="rightFormat_detailItem">版 权：共享素材</div>                        
-                </div>
-                <div class="downloadMaterial_rightDowload">立即下载</div>
-              </div>
+    <div class="uploadingCenter">
+      <div class="uploadingCenter_container">
+          <div class="uploadBtn clearFloat">
+                <a class="uploadBtn_batch uploadBtn_item" href="#">批量上传</a>
+                <a class="uploadBtn_continue uploadBtn_item" href="#">继续上传</a>
+          </div>
+          <div class="uploadingCenter_containerInner">
+               <div class="containerInner_fileList"></div>
+               <div class="uploadingCenter_uploadFile"></div>
           </div>
       </div>
     </div>
@@ -140,14 +123,14 @@
       </div>
     </div>
 
-    <!-- 底部 -->
-    <div class="bottom">
+   <!-- 底部 -->
+   <div class="bottom">
         <div class="bottom_inner">
             <div class="bottom_inner_item">
                 <div class="inner_item_title">关于我们</div>
                 <div class="inner_item_list">
                     <ul>
-                        <li>关于兰图</li>
+                        <li onclick="javascript:location.href='../pages/aboutUs.html'">关于兰图</li>
                         <li>会员介绍</li>
                         <li>设计师咨询</li>
                         <li>联系客服</li>
@@ -155,10 +138,9 @@
                 </div>
             </div>
             <div class="bottom_inner_item">
-                    <div class="inner_item_title">关于我们</div>
+                    <div class="inner_item_title">帮助中心</div>
                     <div class="inner_item_list">
                         <ul>
-                            <li>帮助中心</li>
                             <li>常见问题</li>
                             <li>友情链接</li>
                             <li>投诉举报</li>
@@ -170,10 +152,10 @@
                         <div class="inner_item_title">服务条款</div>
                         <div class="inner_item_list">
                             <ul>
-                                <li>网站规则</li>
-                                <li>使用协议</li>
-                                <li>版权声明</li>
-                                <li>上传声明</li>
+                                <li onclick="javascript:location.href='../pages/websiteRules.html'">网站规则</li>
+                                <li onclick="javascript:location.href='../pages/registrationStatement.html'">使用协议</li>
+                                <li onclick="javascript:location.href='../pages/copyrightDeclaration.html'">版权声明</li>
+                                <li onclick="javascript:location.href='../pages/uploadDeclaration.html'">上传声明</li>
                             </ul>
                         </div>
                     </div>

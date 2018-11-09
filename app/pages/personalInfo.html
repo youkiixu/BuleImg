@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人资料</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--框架必需start-->
+
+    <script type="text/javascript" src="../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../libs/js/framework.js"></script>
+    <link href="../libs/css/import_basic.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../libs/skins/blue/style.css"> 
+    <link rel="stylesheet" type="text/css" id="customSkin" />
+    <!--框架必需end-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/personalInfo.css" />
+    
+</head>
+<body>
+<div class="page_content">
+
+    <!-- 头部 -->
+    <div class="header">
+            <div class="header_inner clear">
+                <div class="header_notice">公告</div>
+                <div class="header_baseWidth clear">
+                    <div class="header_logo">
+                        <img src="../i/lantu-logo.png" />
+                    </div>
+                    <div class="header_search">
+                        <input type="text" class="search_input" placeholder="请输入关键字">
+                        <button class="btn_search"></button> 
+                    </div>
+                    <div class="header_catalog">
+                        <div class="header_classifi">
+                                <div class="header_classifi_item">平面创意</div>
+                                <div class="header_classifi_item">办公文档</div>
+                                <div class="header_classifi_item">上传文件</div>
+                        </div>                                            
+                    </div>
+                </div>
+                <div class="register_login">
+                    <!-- 未登录前 -->
+                    <div class="login_none">
+                            <div class="login register_login_item">登录</div>
+                            <div class="register register_login_item">注册</div>
+                    </div>
+                     <!-- 登录后 -->
+                    <div class="login_success">
+                        <div class="login_success_outside">
+                                <a class="login_success_collect"></a>
+                                <div class="login_success_img" onclick="javascript:location.href='pages/ucenter.html'">
+                                  <img src="../i/tou.png" />
+                                </div>
+                        </div>   
+                        <div class="order_info">
+                            <div class="order_info_top">
+                                <div class="info_top_item">
+                                    <div class="top_item_img"></div>
+                                    <div class="top_item_text">
+                                        <p class="name">Emily</p>
+                                        <p class="integral">积分：99</p>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="order_info_bottom">
+                                    <ul class="order_info_list">
+                                        <li class="info_list_personal">个人中心</li>
+                                        <li class="info_list_upload">我的上传</li>
+                                        <li class="info_list_download">我的下载</li>
+                                        <li class="info_list_collect">我的收藏</li>
+                                        <li class="info_list_loginOut">退出登录</li>                                  
+                                    </ul>
+                                </div>
+                        </div>                
+                    </div>               
+                </div>           
+            </div>
+    
+            <div class="header_category">
+                    <div class="header_category_item clear">
+                        <div class="category_item_inner PPT">PPT模板</div>
+                        <div class="category_item_inner Excel">Excel模板</div>
+                        <div class="category_item_inner Word">Word模板</div>
+                    </div>
+            </div>    
+    
+        </div>
+    
+
+    <!-- 主体内容 -->
+    <div class="personalInfo">
+      <div class="personalInfo_container">
+          <a class="return_ucenter" href="../pages/ucenter.html">返回个人主页</a>
+          <div class="personalInfo_containerInner">
+              <!-- 基本信息 -->
+               <div class="personalInfo_item personalInfo_baseInfo">
+                   <div class="personalInfo_itemTitle">基本信息</div>
+                   <div class="personalInfo_itemDetail">
+                       <div class="itemDetail_inner clearFloat">
+                           <div class="itemDetail_innerLeft innerLeft_imgTxt">头像</div>
+                           <div class="itemDetail_innerRight innerRight_img">
+                                <img src="../i/tou.png" />
+                           </div>
+                       </div>
+                       <div class="itemDetail_inner clearFloat">
+                            <div class="itemDetail_innerLeft">昵称</div>
+                            <div class="itemDetail_innerRight">
+                                    <input type="text" name="personal_name" class="name_input" value="小兰网" />
+                            </div>
+                            <div class="modify">修改</div>
+                        </div>
+                        <div class="itemDetail_inner clearFloat">
+                                <div class="itemDetail_innerLeft">性别</div>
+                                <div class="itemDetail_innerRight">                     
+                                    <input id="checkBoy" name="sex" type="radio" value="" checked="checked" /><label for="checkBoy">男</label>    
+                                    <input id="checkGirls" name="sex" type="radio" value=""  /><label for="checkGirls">女</label>    
+                                    <input id="checkSecrecy" name="sex" type="radio" value=""  /><label for="checkSecrecy">保密</label>                                                               
+                                </div>                             
+                            </div>
+
+                            <div class="itemDetail_inner clearFloat">
+                                    <div class="itemDetail_innerLeft">现居</div>
+                                    <div class="itemDetail_innerRight" class="innerRight_select">
+                                        <select  name="selectAddre" id="selectAddre">   
+                                            <option value="0">请选择</option>   
+                                            <option value="1">佛山市</option>   
+                                            <option value="2">广州市</option>   
+                                            <option value="3">北京市</option>   
+                                            <option value="4">武汉市</option>   
+                                            <option value="5">上海市</option>   
+                                                        
+                                        </select>                                          
+                                    </div>                                 
+                            </div>
+                            <div class="itemDetail_inner clearFloat">
+                                    <div class="itemDetail_innerLeft">签名</div>
+                                    <div class="itemDetail_innerRight">
+                                            <input type="text" name="personal_autograph" class="border_input" value="" size="20" placeholder="不超过20字"/>
+                                    </div>                                    
+                                </div>
+                   </div>
+               </div>
+               <!-- 个人信息 -->
+               <div class="personalInfo_item personalInfo_OwnInfo">
+                    <div class="personalInfo_itemTitle">个人信息</div>
+                    <div class="personalInfo_itemDetail"> 
+                            <div class="itemDetail_inner clearFloat">
+                                    <div class="itemDetail_innerLeft">手机号</div>
+                                    <div class="itemDetail_innerRight">
+                                            <input type="text" name="personal_phone" class="phone_input" value="" placeholder="绑定"/>
+                                    </div>                                    
+                            </div>      
+                            <div class="itemDetail_inner clearFloat">
+                                    <div class="itemDetail_innerLeft">邮箱</div>
+                                    <div class="itemDetail_innerRight">
+                                            <input type="email" name="personal_email" class="email_input" value="" placeholder="绑定"/>
+                                    </div>                                    
+                            </div>
+                            <div class="itemDetail_inner clearFloat">
+                                    <div class="itemDetail_innerLeft">QQ</div>
+                                    <div class="itemDetail_innerRight">
+                                            <input type="text" name="personal_QQ" class="border_input" value=""  placeholder="请输入QQ号码"/>
+                                    </div>                                    
+                            </div>  
+                            <div class="itemDetail_inner clearFloat">
+                                    <div class="itemDetail_innerLeft">生日</div>
+                                    <div class="itemDetail_innerRight" class="innerRight_select">
+                                            <input type="date" class="border_input" name="personal_date" placeholder="选择日期" />                                
+                                    </div>                                 
+                            </div>     
+                            <div class="itemDetail_inner clearFloat">
+                                <div class="itemDetail_innerLeft">行业</div>
+                                <div class="itemDetail_innerRight" class="innerRight_select">
+                                    <select  name="selectTrade" id="selectTrade">   
+                                        <option value="0">请选择</option>   
+                                        <option value="1">互联网</option>   
+                                        <option value="2">电子商务</option>   
+                                        <option value="3">公关/会展</option>   
+                                        <option value="4">金融/银行/保险/证券</option>  
+                                        <option value="5">广告设计</option> 
+                                        <option value="6">家庭/室内设计</option> 
+                                        <option value="7">打印/包装/印刷</option> 
+                                        <option value="8">教育机构</option> 
+
+                                    </select>                                          
+                                </div>                                 
+                            </div>                                                        
+                            <div class="itemDetail_inner clearFloat">
+                                     <div class="itemDetail_innerLeft">职业</div>
+                                     <div class="itemDetail_innerRight" class="innerRight_select">
+                                         <select  name="selectJob" id="selectJob">   
+                                             <option value="0">请选择</option>   
+                                             <option value="1">市场/公关/销售人员</option>   
+                                             <option value="2">产品/运营</option>   
+                                             <option value="3">创意/策划</option>   
+                                             <option value="4">文案/新媒体</option>  
+                                             <option value="5">设计师</option>  
+                                             <option value="6">管理人员</option>  
+                                             <option value="7">学生</option>  
+                                             <option value="8">教师</option>  
+                                         </select>                                          
+                                     </div>                                 
+                            </div>
+                            <div class="itemDetail_inner clearFloat">
+                                    <div class="itemDetail_innerLeft">用途</div>
+                                    <div class="itemDetail_innerRight">                     
+                                        <input id="checkPersonal" name="purpose" type="radio" value="" checked="checked" /><label for="checkPersonal">个人</label>    
+                                        <input id="checkSmallBusiness" name="purpose" type="radio" value=""  /><label for="checkSmallBusiness">小型企业</label>    
+                                        <input id="checkBusiness" name="purpose" type="radio" value=""  /><label for="checkBusiness">企业</label>                                                               
+                                    </div>                             
+                            </div>
+                             
+                    </div>
+               </div>
+
+               <!-- 偏好 -->
+               <div class="personalInfo_item personalInfo_LoveInfo">
+                    <div class="personalInfo_itemTitle">偏好（最多可选3个）</div>
+                    <div class="personalInfo_itemDetail">                      
+                         <div class="itemDetail_inner clearFloat">
+                                <div class="LoveInfo_list">
+                                    <ul class="clearFloat">
+                                        <li>平面广告</li>
+                                        <li>电商淘宝</li>
+                                        <li>平面广告</li>
+                                        <li>平面广告</li>
+                                        <li>平面广告</li>
+                                        <li>平面广告</li>
+                                        <li>平面广告</li>
+                                        <li>平面广告</li>
+                                    </ul>
+                                </div>                   
+                             </div>
+ 
+                           
+                           
+                    </div>
+               </div>
+
+                <!-- 社交账号绑定 -->
+                <div class="personalInfo_item personalInfo_SocialAccountInfo">
+                    <div class="personalInfo_itemTitle SocialAccountInfo_title">社交账号绑定</div>
+                    <div class="personalInfo_itemTitle SocialAccountInfo_title">先<a>绑定手机</a>才能与第三方账号绑定或解绑！</div>
+                    <div class="personalInfo_itemDetail">                      
+                        <div class="account_binding QQ_binding clearFloat">
+                            <div class="account_binding_style">
+                                <img src="../i/account-QQ.png" />
+                            </div>
+                            <div class="account_binding_styleName">QQ</div>
+                            <div class="account_binding_nickName">QQ昵称 小兰图</div>
+                            <div class="account_binding_judge already_binding">已绑定</div>
+                        </div>
+                        <div class="account_binding xin_binding clearFloat">
+                            <div class="account_binding_style">
+                                <img src="../i/account-xin.png" />
+                            </div>
+                            <div class="account_binding_styleName">微博</div>
+                            <div class="account_binding_nickName">未绑定</div>
+                            <div class="account_binding_judge">绑定</div>
+                        </div>
+                        <div class="account_binding wei_binding clearFloat">
+                            <div class="account_binding_style">
+                                <img src="../i/account-wei.png" />
+                            </div>
+                            <div class="account_binding_styleName">微信</div>
+                            <div class="account_binding_nickName">未绑定</div>
+                            <div class="account_binding_judge">绑定</div>
+                        </div>
+                           
+                    </div>
+               </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    
+    <!--侧栏 -->
+    <div class="Sidebar">
+      <div class="Sidebar_inner">
+        <div class="Sidebar_inner_item Sidebar_inner_signIn">签到</div>
+        <div class="Sidebar_inner_item Sidebar_inner_earnPoints">赚分</div>
+        <div class="Sidebar_inner_item Sidebar_inner_personal">个人</div>
+        <div class="Sidebar_inner_item Sidebar_inner_service">客服</div>
+        <div class="Sidebar_inner_item Sidebar_inner_opinion">意见</div>
+        <div class="Sidebar_inner_item Sidebar_inner_upload">上传</div>
+        <div class="Sidebar_inner_item Sidebar_inner_officialMicro">官微</div>
+        <div class="Sidebar_inner_item Sidebar_inner_Top" >TOP</div>
+      </div>
+    </div>
+
+   <!-- 底部 -->
+   <div class="bottom">
+        <div class="bottom_inner">
+            <div class="bottom_inner_item">
+                <div class="inner_item_title">关于我们</div>
+                <div class="inner_item_list">
+                    <ul>
+                        <li onclick="javascript:location.href='../pages/aboutUs.html'">关于兰图</li>
+                        <li>会员介绍</li>
+                        <li>设计师咨询</li>
+                        <li>联系客服</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_inner_item">
+                    <div class="inner_item_title">帮助中心</div>
+                    <div class="inner_item_list">
+                        <ul>
+                            <li>常见问题</li>
+                            <li>友情链接</li>
+                            <li>投诉举报</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom_inner_item">
+                        <div class="inner_item_title">服务条款</div>
+                        <div class="inner_item_list">
+                            <ul>
+                                <li onclick="javascript:location.href='../pages/websiteRules.html'">网站规则</li>
+                                <li onclick="javascript:location.href='../pages/registrationStatement.html'">使用协议</li>
+                                <li onclick="javascript:location.href='../pages/copyrightDeclaration.html'">版权声明</li>
+                                <li onclick="javascript:location.href='../pages/uploadDeclaration.html'">上传声明</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bottom_inner_item">
+                            <div class="inner_item_title">我要供图</div>
+                            <div class="inner_item_list">
+                                <ul>
+                                    <li>上传作品</li>
+                                    <li>上传记录</li>
+                                    <li>下载记录</li>
+                                    <li>收藏的图</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bottom_inner_item contact_us">
+                                <div class="inner_item_title">联系我们</div>
+                                <div class="inner_item_list">
+                                    <ul>
+                                        <li>电话：0757-82741635</li>
+                                        <li>QQ:643761637</li>
+                                        <li></li>
+                                        <li class="online"></li>
+                                    </ul>
+                                </div>
+                            </div>
+        </div>
+        <div class="copyRight">Copyright © 2018 兰图网  （www.lanimg.com）渝ICP备14001438号-1 站长统计</div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../libs/js/popup/dialog.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

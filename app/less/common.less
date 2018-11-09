@@ -223,6 +223,7 @@ height:0;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .login_success_img img{
   width: 100%;
@@ -322,7 +323,7 @@ height:0;
   width: 100%;
   height: 375px;
   background: #f6f6f6;
-  box-shadow: 0 -4px 6px -3px #eee;
+  box-shadow: 0 -4px 6px -3px rgba(0,0,0,0.2);
 }
 .bottom_inner{
   width: 1150px;
@@ -358,6 +359,7 @@ height:0;
   line-height: 25px;
   font-size: 15px;
   color: #898787;
+  cursor: pointer;
 }
 .contact_us .online{
   width: 125px;
@@ -821,4 +823,50 @@ margin-top: 20px;
   text-align: center;
   font-size: 14px;
   color: #898787;
+}
+
+/*关于我们等类似模块*/
+.commonTxt{
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+}
+.clearFloat:after{
+  display: block;
+  content:'';
+  clear: both;
+  height:0;
+  }
+.commonTxt_container{
+  width: 1200px;
+  height: 100%;
+  margin: 70px auto;
+  margin-bottom: 170px;
+}
+.commonTxt_containerInner{
+  width: 1200px;
+  font-size: 14px;
+  color: #4c4c4c;
+  background: #fff;
+  padding: 5px 40px 70px 40px;
+  box-sizing: border-box;
+  box-shadow:1px 1px 6px 1px rgba(0,0,0,0.2);
+}
+.commonTxt_containerInner p{
+  text-indent: 2em;
+  line-height: 23px;
+  margin-top: 25px;
+}
+.commonTxt .remind{
+  text-indent: 0;
+  font-size: 16px;
+  color: #4c4c4c;
+  font-weight: bold;
+  line-height: 30px;
+}
+.commonTxt .purpose{
+  margin-top: 0;
+}
+.commonTxt .remindMar{
+  margin-top: 50px;
 }
