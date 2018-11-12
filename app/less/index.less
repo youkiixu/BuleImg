@@ -14,7 +14,7 @@ height:0;
 }
 .main_header{
     width: 100%;
-    height: 320px;
+    // height: 320px;
 }
 .main_header_cate{
     margin: 0;
@@ -34,6 +34,10 @@ height:0;
 .main_header_logo img{
     width: 100%;
     height: 100%;
+}
+.main_header_cateAll{
+    width: 100%;
+    position: relative;
 }
 .main_header_catalog{
     width: 845px;
@@ -72,10 +76,13 @@ height:0;
     position: absolute;
     background: #f6f6f6;
     z-index: 99;
-    margin-left: 0;
+    left: 0;
+    display: none;
     //box-shadow:inset -2px -2px 8px rgba(0,0,0,0.2);
 }
-
+.main_catalog_item:hover .main_header_category{
+    display: block;
+}
 .main_header_category .header_category_item{
     height: 100%;
 }
@@ -118,7 +125,12 @@ height:0;
     background: #fff;
     position: absolute;
     z-index: 99;
-    margin-top: 0;
+    left: 0;
+    top: 145px;
+    display: none;
+}
+.main_header_category .category_item_inner:hover .category_inner_list{
+    display: block;
 }
 .inner_list_baseWidth{
     width: 1200px;

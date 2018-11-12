@@ -18,6 +18,7 @@ body{
   background: #f6f6f6;
   border-bottom: 1px solid #cdcdcd;
   z-index: 1000;
+  position: relative;
 }
 .clear:after{
 display: block;
@@ -124,11 +125,13 @@ height:0;
   position: absolute;
   background: #f6f6f6;
   z-index: 99;
-  margin-left: 0;
+  left: 0;
   box-shadow:inset -2px -2px 8px rgba(0,0,0,0.2);
   display: none;
 }
-
+.header_classifi_item:hover .header_category{
+  display: block;
+}   
 .header_category_item{
   height: 100%;
   width: 1200px;
@@ -239,6 +242,10 @@ height:0;
   border-radius: 5px;
   background-color: #fff;
   display: none;
+  top: 65px;
+}
+.login_success_outside:hover .order_info{
+  display: block;
 }
 .login_success .order_info .order_info_top{
   width: 257px;
@@ -497,7 +504,12 @@ height:0;
     z-index: 999;
     box-shadow: -2px -2px 8px rgba(0,0,0,0.2);   
 }
+.floors_nav ul{
+  margin: 0;
+  padding: 0;
+}
 .floors_nav ul li{
+  width: 45px;
   list-style: none;
   height: 90px;
   line-height: 120px;
